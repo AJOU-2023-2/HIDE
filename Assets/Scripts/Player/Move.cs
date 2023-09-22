@@ -7,8 +7,12 @@ public class Move : MonoBehaviour
 {
     private Rigidbody2D playerRb;
     private Animator playerAnim;
+    private MapTransition boundaryScript;
 
     public float playerSpeed;
+    
+    public Vector2 saveMaxPos;
+    public Vector2 saveMinPos;
 
     void Awake()
     {
@@ -30,6 +34,16 @@ public class Move : MonoBehaviour
         {
             playerAnim.SetFloat("lastMoveX", Input.GetAxisRaw("Horizontal"));
             playerAnim.SetFloat("lastMoveY", Input.GetAxisRaw("Vertical"));
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag == "Boundary")
+        {
+            boundaryScript = collision.GetComponent<MapTransition>();
+            saveMaxPos = boundaryScript.newMaxCameraBoundary;
+            saveMinPos = boundaryScript.newMinCameraBoundary;
         }
     }
 }
