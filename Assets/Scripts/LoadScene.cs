@@ -7,10 +7,16 @@ using UnityEngine.UI;
 public class LoadScene : MonoBehaviour
 {
     public GameObject manualBar;
+    private Animator animator;
 
     //Fade Effect
     public GameObject panel;
     Image image;
+
+    void Awake()
+    {
+        animator = GetComponentInChildren<Animator>();
+    }
 
     public void GameStart()
     {
@@ -45,9 +51,11 @@ public class LoadScene : MonoBehaviour
     {
         if(manualBar.activeSelf == true)
         {
+            animator.SetTrigger("doHide");
             manualBar.SetActive(false);
         }else {
             manualBar.SetActive(true);
+            animator.SetTrigger("doShow");
         }
     }
 }
