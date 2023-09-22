@@ -10,7 +10,7 @@ public class Move : MonoBehaviour
     private MapTransition boundaryScript;
 
     public float playerSpeed;
-    
+
     public Vector2 saveMaxPos;
     public Vector2 saveMinPos;
 

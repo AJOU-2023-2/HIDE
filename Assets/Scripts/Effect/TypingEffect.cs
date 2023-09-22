@@ -31,6 +31,12 @@ public class TypingEffect : MonoBehaviour
         {
             Setmsg(_dialog[_dialogNum]);
             _dialogNum++;
+        } else
+        {
+            if (SceneManager.GetActiveScene().buildIndex == 1)
+                SceneManager.LoadScene("MainIntro");
+            if (SceneManager.GetActiveScene().buildIndex == 2)
+                SceneManager.LoadScene("MainGame");
         }
     }
 

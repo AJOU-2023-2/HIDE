@@ -34,7 +34,7 @@ public class LoadScene : MonoBehaviour
             yield return new WaitForSeconds(0.01f);
             image.color = new Color(0,0,0,fadeCount);
         }
-        SceneManager.LoadScene("Main");
+        SceneManager.LoadScene("Intro");
     }
 
     public void GameQuit()
