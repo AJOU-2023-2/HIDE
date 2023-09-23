@@ -1,49 +1,107 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class UIBtn : MonoBehaviour
 {
-    public GameObject Inventory;
-    public GameObject Memo;
-    public GameObject Map;
+    public GameObject Inventory; //Inventory Panel
+    public GameObject Memo; //Memo Panel
+    public GameObject Map; //Map Panel
+
+    public bool CheckItem1 = false;
+    public bool CheckItem2 = false;
+    public TMP_Text ItemName;
+    public GameObject Item1;
+    public GameObject Item2;
+    public GameObject Detail1;
+    public GameObject Detail2;
+
+    void Update()
+    {
+        InventorySystem();
+    }
 
     //Turn on and off the Inventory Panel
     public void InventoryUI()
     {
-        if(Inventory.activeSelf == false)
+        if (Memo.activeSelf == true || Map.activeSelf == true)  //If Memo or Map is opened,
         {
-            Inventory.SetActive(true);
-        }
+            return; //Inventory should not be opened
+        } 
         else
         {
-            Inventory.SetActive(false);
+            if (Inventory.activeSelf == false)
+            {
+                Inventory.SetActive(true);
+            }
+            else
+            {
+                Inventory.SetActive(false);
+            }
         }
     }
 
     //Turn on and off the Memo Panel
     public void MemoUI()
     {
-        if (Memo.activeSelf == false)
+        if (Inventory.activeSelf == true || Map.activeSelf == true) //If Inventory or Map is opened,
         {
-            Memo.SetActive(true);
+            return; //Memo should not be opened
         }
         else
         {
-            Memo.SetActive(false);
+            if (Memo.activeSelf == false)
+            {
+                Memo.SetActive(true);
+            }
+            else
+            {
+                Memo.SetActive(false);
+            }
         }
     }
 
     //Turn on and off the Map Panel
     public void MapUI()
     {
-        if (Map.activeSelf == false)
+        if (Inventory.activeSelf == true || Memo.activeSelf == true) //If Inventory or Memo is opened,
         {
-            Map.SetActive(true);
+            return; //Map should not be opened
         }
         else
         {
-            Map.SetActive(false);
+            if (Map.activeSelf == false)
+            {
+                Map.SetActive(true);
+            }
+            else
+            {
+                Map.SetActive(false);
+            }
         }
     }
+    
+    //Show Inventory's Item Image and Item Name
+    void InventorySystem()
+    {
+        if(CheckItem1 == true)
+        {
+            CheckItem1 = false;
+            Item1.SetActive(true); //Show Item1 Icon
+            Detail1.SetActive(true); //Show only Item1's detail
+            Detail2.SetActive(false);
+            ItemName.text = "Test Key";
+        }
+        if (CheckItem2 == true)
+        {
+            CheckItem2 = false;
+            Item2.SetActive(true); //Show Item2 Icon
+            Detail1.SetActive(false);
+            Detail2.SetActive(true); //Show only Item2's detail
+            ItemName.text = "Test Key2";
+        }
+    }
+
 }
