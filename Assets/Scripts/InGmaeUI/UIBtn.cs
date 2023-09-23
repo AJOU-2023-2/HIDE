@@ -29,7 +29,7 @@ public class UIBtn : MonoBehaviour
         if (Memo.activeSelf == true || Map.activeSelf == true)  //If Memo or Map is opened,
         {
             return; //Inventory should not be opened
-        } 
+        }
         else
         {
             if (Inventory.activeSelf == false)
@@ -82,11 +82,11 @@ public class UIBtn : MonoBehaviour
             }
         }
     }
-    
+
     //Show Inventory's Item Image and Item Name
     void InventorySystem()
     {
-        if(CheckItem1 == true)
+        if (CheckItem1 == true)
         {
             CheckItem1 = false;
             Item1.SetActive(true); //Show Item1 Icon
@@ -103,5 +103,4 @@ public class UIBtn : MonoBehaviour
             ItemName.text = "Test Key2";
         }
     }
-
 }
