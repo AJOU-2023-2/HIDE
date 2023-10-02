@@ -103346,6 +103346,10 @@ MonoBehaviour:
   player: {fileID: 0}
   newMinCameraBoundary: {x: 72.2, y: 11.92}
   newMaxCameraBoundary: {x: 72.2, y: 11.92}
+  roomUI: {fileID: 0}
+  roomTextUI: {fileID: 0}
+  roomName: 
+  uiCheck: 0
   playerPosOffset: {x: 1, y: 0}
   exitPos: {fileID: 1783000780}
 --- !u!61 &1250910472
@@ -103537,7 +103541,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1380757188}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f53e9613ab5b4f01a62504f2aa28af3, type: 3}
+  m_Script: {fileID: 11500000, guid: 9d9dff68d038f984f9c25c4952acfd94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   targetPos: {fileID: 370272919}
@@ -103826,7 +103830,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -5.69, y: 0.08}
+  m_AnchoredPosition: {x: -7.8, y: -7.6}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1553508298
@@ -104115,6 +104119,10 @@ MonoBehaviour:
   player: {fileID: 0}
   newMinCameraBoundary: {x: -13.78, y: -7.66}
   newMaxCameraBoundary: {x: 12.74, y: 25.49}
+  roomUI: {fileID: 0}
+  roomTextUI: {fileID: 0}
+  roomName: 
+  uiCheck: 0
   playerPosOffset: {x: -1, y: 0}
   exitPos: {fileID: 1250910470}
 --- !u!61 &1783000782
