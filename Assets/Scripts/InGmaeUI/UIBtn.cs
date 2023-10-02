@@ -18,6 +18,10 @@ public class UIBtn : MonoBehaviour
     public GameObject Detail1;
     public GameObject Detail2;
 
+    public GameObject MapCellar; //Cellar Map
+    public GameObject Map1st; //1st Map
+    public GameObject Map2nd; //2nd Map
+
     void Update()
     {
         InventorySystem();
@@ -102,5 +106,26 @@ public class UIBtn : MonoBehaviour
             Detail2.SetActive(true); //Show only Item2's detail
             ItemName.text = "Test Key2";
         }
+    }
+
+    public void MapCellarBtn()
+    {
+        MapCellar.SetActive(true); //Show only Cellar Map
+        Map1st.SetActive(false);
+        Map2nd.SetActive(false);
+    }
+
+    public void Map1stBtn()
+    {
+        MapCellar.SetActive(false);
+        Map1st.SetActive(true); //Show only 1st Floor Map
+        Map2nd.SetActive(false);
+    }
+
+    public void Map2ndBtn()
+    {
+        MapCellar.SetActive(false);
+        Map1st.SetActive(false);
+        Map2nd.SetActive(true); //Show only 2nd Floor Map
     }
 }
