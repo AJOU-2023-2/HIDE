@@ -4,14 +4,6 @@ using UnityEngine;
 
 public class FadeIn : MonoBehaviour
 {
-    // float time = 0;
-
-    // void Update()
-    // {
-    //     GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, time/3);
-    //     time += Time.deltaTime;
-    // }
-
     void Awake()
     {
         StartCoroutine(fadeStart());
