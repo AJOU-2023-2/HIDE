@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -103,7 +103,259 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: '!$Fireplace2_0'
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 478
+        width: 62
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8e05c344f752453e8ace1c6fb6493c7
+      internalID: 2033143412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Fireplace2_1'
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 478
+        width: 62
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b4db2a7ce8bd48e09d768707f879b57
+      internalID: 379256478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Fireplace2_2'
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 478
+        width: 62
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f393152f83b9f4ec8b0d9cf3ae5d2730
+      internalID: -870399839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Fireplace2_3'
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 333
+        width: 64
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c79dd95ac6f7746428248a9e2411c9c9
+      internalID: 341422328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Fireplace2_4'
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 332
+        width: 63
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a74232bb41b44b9682748e7629320fb
+      internalID: 101327065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Fireplace2_5'
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 331
+        width: 65
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 114f57fef4e194f61abcf1a0b3272753
+      internalID: -300575116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Fireplace2_6'
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 190
+        width: 54
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91fe2688428fc4701b6210a218e97c25
+      internalID: -318365907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Fireplace2_7'
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 190
+        width: 54
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b04cd3157859e4d90ae83ef9e51869ed
+      internalID: -1365923082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Fireplace2_8'
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 190
+        width: 54
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48fd86dc10303401aa23b2f5e597b235
+      internalID: 285843073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Fireplace2_9'
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 46
+        width: 57
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6c6fda92084341c4bffda3405f8d2a2
+      internalID: 621768992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Fireplace2_10'
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 46
+        width: 61
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dc8338a76f15432d8a6a7a68222aabd
+      internalID: 180461542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Fireplace2_11'
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 45
+        width: 59
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f183f2b726e4c419496ac7248f4014e5
+      internalID: -1797430803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -114,7 +366,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      '!$Fireplace2_0': 2033143412
+      '!$Fireplace2_1': 379256478
+      '!$Fireplace2_10': 180461542
+      '!$Fireplace2_11': -1797430803
+      '!$Fireplace2_2': -870399839
+      '!$Fireplace2_3': 341422328
+      '!$Fireplace2_4': 101327065
+      '!$Fireplace2_5': -300575116
+      '!$Fireplace2_6': -318365907
+      '!$Fireplace2_7': -1365923082
+      '!$Fireplace2_8': 285843073
+      '!$Fireplace2_9': 621768992
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

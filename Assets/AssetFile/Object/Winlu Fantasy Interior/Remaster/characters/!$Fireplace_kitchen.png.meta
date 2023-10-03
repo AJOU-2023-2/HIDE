@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -103,7 +103,259 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: '!$Fireplace_kitchen_0'
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 432
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acb160ae6c4324b5da90c9937baa1e00
+      internalID: 1385699698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Fireplace_kitchen_1'
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 432
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07bad0cd40f8e41a09387e3beca7fd42
+      internalID: 474348266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Fireplace_kitchen_2'
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 432
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbf7e3c5cce3e4004845a5d9506bd9b0
+      internalID: -1090850062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Fireplace_kitchen_3'
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 288
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e800cf40e7ca4e5b872806b3b89e3e8
+      internalID: 1662341820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Fireplace_kitchen_4'
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 288
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d0bd886b2b8249e8b226bf702773ecc
+      internalID: 986416017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Fireplace_kitchen_5'
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 288
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1694f74bf2535479896d16fff4fa0180
+      internalID: -438480491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Fireplace_kitchen_6'
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 144
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a76c9c3700764780b6636471ccb6fc0
+      internalID: -2017051498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Fireplace_kitchen_7'
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 144
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3776f278d43b844888f910ecea6637c6
+      internalID: 1242982844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Fireplace_kitchen_8'
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 144
+        width: 90
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08efb4e6461d547b1b9985e10e4ed14f
+      internalID: -1810504575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Fireplace_kitchen_9'
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 5
+        width: 48
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b538c2010048d4aa58a098db6db5b35a
+      internalID: 192074056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Fireplace_kitchen_10'
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 5
+        width: 48
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a9901465ac62451d94fb51db4229f48
+      internalID: -710030745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Fireplace_kitchen_11'
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 5
+        width: 48
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d909a2aec37046bcadc158d288b0152
+      internalID: -1090944306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -114,7 +366,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      '!$Fireplace_kitchen_0': 1385699698
+      '!$Fireplace_kitchen_1': 474348266
+      '!$Fireplace_kitchen_10': -710030745
+      '!$Fireplace_kitchen_11': -1090944306
+      '!$Fireplace_kitchen_2': -1090850062
+      '!$Fireplace_kitchen_3': 1662341820
+      '!$Fireplace_kitchen_4': 986416017
+      '!$Fireplace_kitchen_5': -438480491
+      '!$Fireplace_kitchen_6': -2017051498
+      '!$Fireplace_kitchen_7': 1242982844
+      '!$Fireplace_kitchen_8': -1810504575
+      '!$Fireplace_kitchen_9': 192074056
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
