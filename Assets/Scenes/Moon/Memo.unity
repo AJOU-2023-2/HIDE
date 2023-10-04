@@ -5725,7 +5725,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1894618879
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6084,6 +6084,7 @@ MonoBehaviour:
   Inventory: {fileID: 203982763}
   Memo: {fileID: 1567902286}
   Map: {fileID: 446190729}
+  MapBtn: {fileID: 1894618878}
   CheckItem1: 0
   CheckItem2: 0
   ItemName: {fileID: 1579926093}
@@ -6091,6 +6092,7 @@ MonoBehaviour:
   Item2: {fileID: 757396840}
   Detail1: {fileID: 1004605332}
   Detail2: {fileID: 1404959139}
+  CheckMap: 0
   MapCellar: {fileID: 1968024576}
   Map1st: {fileID: 1875821431}
   Map2nd: {fileID: 1719853470}

@@ -9,6 +9,7 @@ public class UIBtn : MonoBehaviour
     public GameObject Inventory; //Inventory Panel
     public GameObject Memo; //Memo Panel
     public GameObject Map; //Map Panel
+    public GameObject MapBtn; //Map Button
 
     public bool CheckItem1 = false;
     public bool CheckItem2 = false;
@@ -18,6 +19,7 @@ public class UIBtn : MonoBehaviour
     public GameObject Detail1;
     public GameObject Detail2;
 
+    public bool CheckMap = false;
     public GameObject MapCellar; //Cellar Map
     public GameObject Map1st; //1st Map
     public GameObject Map2nd; //2nd Map
@@ -25,6 +27,11 @@ public class UIBtn : MonoBehaviour
     void Update()
     {
         InventorySystem();
+
+        if (CheckMap == true)
+        {
+            MapBtn.SetActive(true);
+        }
     }
 
     //Turn on and off the Inventory Panel
