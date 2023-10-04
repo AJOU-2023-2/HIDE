@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -103,7 +103,259 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: '!$Gate_Cathedral2_0'
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 576
+        width: 86
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5401111c7e7e24a25bda2fcb0b9c7ea8
+      internalID: -803140753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Gate_Cathedral2_1'
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 576
+        width: 86
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb83770695ed847dd830253d131b3c66
+      internalID: -2064094179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Gate_Cathedral2_2'
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 576
+        width: 86
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bc93f50bfabc4e5488eb1c5cd92e895
+      internalID: -1946832199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Gate_Cathedral2_3'
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 384
+        width: 86
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4d56aaef5b0a4f8390ab5fc5fff7006
+      internalID: 762802236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Gate_Cathedral2_4'
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 384
+        width: 86
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fe7d7932601e49228c2964e68eadd97
+      internalID: -619681392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Gate_Cathedral2_5'
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 384
+        width: 86
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abb473a9b88954ca4b2153a9d4a52ff0
+      internalID: 1621698960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Gate_Cathedral2_6'
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 192
+        width: 86
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cdaebc1a8266406580b0666ecff1ac2
+      internalID: -92780587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Gate_Cathedral2_7'
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 192
+        width: 86
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5b6af08bf614473ea032d1b88cac4b7
+      internalID: 1615207875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Gate_Cathedral2_8'
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 192
+        width: 86
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2829120072c0a4e5fa1beab15fcaee8a
+      internalID: -1562688565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Gate_Cathedral2_9'
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 0
+        width: 86
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98849c2b601db43eca94c230a7442b15
+      internalID: -1376138427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Gate_Cathedral2_10'
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 0
+        width: 86
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3ec86108fda1435480ee0a42d1a9f1d
+      internalID: -1943071999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Gate_Cathedral2_11'
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 0
+        width: 86
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 432427a4ba8a54ffc886c554c3bb78f8
+      internalID: 1293221183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -114,7 +366,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      '!$Gate_Cathedral2_0': -803140753
+      '!$Gate_Cathedral2_1': -2064094179
+      '!$Gate_Cathedral2_10': -1943071999
+      '!$Gate_Cathedral2_11': 1293221183
+      '!$Gate_Cathedral2_2': -1946832199
+      '!$Gate_Cathedral2_3': 762802236
+      '!$Gate_Cathedral2_4': -619681392
+      '!$Gate_Cathedral2_5': 1621698960
+      '!$Gate_Cathedral2_6': -92780587
+      '!$Gate_Cathedral2_7': 1615207875
+      '!$Gate_Cathedral2_8': -1562688565
+      '!$Gate_Cathedral2_9': -1376138427
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

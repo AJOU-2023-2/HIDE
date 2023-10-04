@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -103,7 +103,259 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: '!$Smith_Inside_0'
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 577
+        width: 138
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53b06832c76f7404d84fd5aafbc9885b
+      internalID: 1584472875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Smith_Inside_1'
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 577
+        width: 138
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb86605db034447d8854187b28e9b8a5
+      internalID: -1475908482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Smith_Inside_2'
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 577
+        width: 138
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7c9fb28bd2f14608a3b927f4319753e
+      internalID: -1348476141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Smith_Inside_3'
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 385
+        width: 138
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab98e1391c0d947e5aab19abd42afa6c
+      internalID: -1442206777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Smith_Inside_4'
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 385
+        width: 138
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 103dc2e4783904304911c757e94f507e
+      internalID: 1004597632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Smith_Inside_5'
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 385
+        width: 138
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f54f43036e034944a9a6eb81830a845
+      internalID: -1693318153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Smith_Inside_6'
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 226
+        width: 129
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d124602180264225aa5971cbc837388
+      internalID: 1030757524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Smith_Inside_7'
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 226
+        width: 129
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2ec1b4c6dfda4ef2ac17280fd21a1c1
+      internalID: 657353681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Smith_Inside_8'
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 226
+        width: 129
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b44fd6bdde1c7420b81a5e712b0390b2
+      internalID: -109817905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Smith_Inside_9'
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 34
+        width: 113
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 491c34d357553452e83234b7d4618638
+      internalID: 269471834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Smith_Inside_10'
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 34
+        width: 113
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de8911b815f0f40ee961fbe760eb25e6
+      internalID: 583295016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Smith_Inside_11'
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 34
+        width: 113
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 511ab9c676c5b4dcb89f5a017ea05dd2
+      internalID: -266385386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -114,7 +366,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      '!$Smith_Inside_0': 1584472875
+      '!$Smith_Inside_1': -1475908482
+      '!$Smith_Inside_10': 583295016
+      '!$Smith_Inside_11': -266385386
+      '!$Smith_Inside_2': -1348476141
+      '!$Smith_Inside_3': -1442206777
+      '!$Smith_Inside_4': 1004597632
+      '!$Smith_Inside_5': -1693318153
+      '!$Smith_Inside_6': 1030757524
+      '!$Smith_Inside_7': 657353681
+      '!$Smith_Inside_8': -109817905
+      '!$Smith_Inside_9': 269471834
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

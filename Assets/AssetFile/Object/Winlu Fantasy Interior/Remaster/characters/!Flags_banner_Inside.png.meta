@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -103,7 +103,238 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: '!Flags_banner_Inside_0'
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 688
+        width: 46
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a83b1f450dbf74cc3a13a1d4cd440df5
+      internalID: -1862208727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Flags_banner_Inside_1'
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 678
+        width: 46
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cab4bfc46c20e42b9a38fefc703687c5
+      internalID: 2069635160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Flags_banner_Inside_2'
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 676
+        width: 46
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3221d78631e0b44a7ac481cd5c915788
+      internalID: -1683817022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Flags_banner_Inside_3'
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 680
+        width: 46
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba603b522b65b4c799d96770573bb1c4
+      internalID: 495183637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Flags_banner_Inside_4'
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 678
+        width: 46
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7b1e01418bcd452d8b74d0354584ac1
+      internalID: -1756032930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Flags_banner_Inside_5'
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 676
+        width: 34
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cda191c76a334bfa91da36fe55d54bf
+      internalID: -507940777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Flags_banner_Inside_6'
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 676
+        width: 34
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69e284dd0b3d14b2db11c86c25c4196a
+      internalID: 1151202621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Flags_banner_Inside_7'
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 676
+        width: 34
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d493970ff47bd41f58ab31ad29b023cc
+      internalID: 2014812029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Flags_banner_Inside_8'
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 580
+        width: 34
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1657e0e8a340842b0854fcdf8bf2c61e
+      internalID: 1674822231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Flags_banner_Inside_9'
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 580
+        width: 34
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 072a3084bb53e4848946fce4a22a3673
+      internalID: 351477505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Flags_banner_Inside_10'
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 580
+        width: 34
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f73d43efb68048b58eeeeab1fc5a72a
+      internalID: -292330023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -114,7 +345,18 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      '!Flags_banner_Inside_0': -1862208727
+      '!Flags_banner_Inside_1': 2069635160
+      '!Flags_banner_Inside_10': -292330023
+      '!Flags_banner_Inside_2': -1683817022
+      '!Flags_banner_Inside_3': 495183637
+      '!Flags_banner_Inside_4': -1756032930
+      '!Flags_banner_Inside_5': -507940777
+      '!Flags_banner_Inside_6': 1151202621
+      '!Flags_banner_Inside_7': 2014812029
+      '!Flags_banner_Inside_8': 1674822231
+      '!Flags_banner_Inside_9': 351477505
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

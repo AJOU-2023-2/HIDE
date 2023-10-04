@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -103,7 +103,385 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: '!$Curtain2_0'
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 478
+        width: 48
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21aad477792d8453a8ad8afc8960265d
+      internalID: -2080464849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Curtain2_1'
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 478
+        width: 48
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46f68772b8df6481299e718a59309c8e
+      internalID: 1999152664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Curtain2_2'
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 478
+        width: 48
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acc93bacce63d4cffb26ab852e60dbc2
+      internalID: -1162783177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Curtain2_3'
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 334
+        width: 48
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71f374190e0da49dd860bcd19accaec5
+      internalID: 1864887411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Curtain2_4'
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 334
+        width: 48
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa127cb6c57e04851bbb7c1fd20135ae
+      internalID: -1931406793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Curtain2_5'
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 334
+        width: 48
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d2e256524ba246d5b482f408523530f
+      internalID: 277387790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Curtain2_6'
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 190
+        width: 28
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a5ba1f0ca2bf4048b7fb3b4a42eda5a
+      internalID: -1548473733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Curtain2_7'
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 190
+        width: 28
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8ce8a218266246f0b40572ce57e3518
+      internalID: 43505681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Curtain2_8'
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 190
+        width: 28
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30cddcce7fc1d4cb0988fa8619cfe6ec
+      internalID: 1065470481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Curtain2_9'
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 190
+        width: 28
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28e72af623b1e4c4a98b805706fefb18
+      internalID: -420346742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Curtain2_10'
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 190
+        width: 28
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77f1f82ec6a5c4ceba91403d7cc8eda1
+      internalID: 1127742871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Curtain2_11'
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 190
+        width: 28
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e00e1ca1e3c1a46599f75106fdde8725
+      internalID: -1160819998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Curtain2_12'
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 46
+        width: 28
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72b6445f7fe3e45e19f40f6e0f8b760e
+      internalID: -1121156263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Curtain2_13'
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 46
+        width: 28
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 380c58a796d114c51b800c00964d57ef
+      internalID: 126361714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Curtain2_14'
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 46
+        width: 28
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d43bf518e54d4c309bcb1801bf7120a
+      internalID: -668561286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Curtain2_15'
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 46
+        width: 28
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5520d3f7ca6d3403c969ae2ba10dde38
+      internalID: -286791397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Curtain2_16'
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 46
+        width: 28
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06262d3dc6f6c4f71ae237a934566160
+      internalID: -1017214886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!$Curtain2_17'
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 46
+        width: 28
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e995e6a9da004b2681c186f552c1054
+      internalID: 590498506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -114,7 +492,25 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      '!$Curtain2_0': -2080464849
+      '!$Curtain2_1': 1999152664
+      '!$Curtain2_10': 1127742871
+      '!$Curtain2_11': -1160819998
+      '!$Curtain2_12': -1121156263
+      '!$Curtain2_13': 126361714
+      '!$Curtain2_14': -668561286
+      '!$Curtain2_15': -286791397
+      '!$Curtain2_16': -1017214886
+      '!$Curtain2_17': 590498506
+      '!$Curtain2_2': -1162783177
+      '!$Curtain2_3': 1864887411
+      '!$Curtain2_4': -1931406793
+      '!$Curtain2_5': 277387790
+      '!$Curtain2_6': -1548473733
+      '!$Curtain2_7': 43505681
+      '!$Curtain2_8': 1065470481
+      '!$Curtain2_9': -420346742
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
