@@ -7,6 +7,7 @@ public class SettingUI : MonoBehaviour
 {
     public GameObject OptionBtn;
     public GameObject CloseBtn;
+    public GameObject WarningPanel;
 
     public void SettingBtn()
     {
@@ -24,10 +25,20 @@ public class SettingUI : MonoBehaviour
 
     public void CloseUI()
     {
+        WarningPanel.SetActive(true);
+    }
+
+    public void YesBtn()
+    {
         #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
         #else
         Application.Quit();
         #endif
+    }
+
+    public void NoBtn()
+    {
+        WarningPanel.SetActive(false);
     }
 }
