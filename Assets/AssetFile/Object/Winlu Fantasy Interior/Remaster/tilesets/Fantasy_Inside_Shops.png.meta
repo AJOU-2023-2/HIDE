@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -103,7 +103,616 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Fantasy_Inside_Shops_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 408
+        width: 768
+        height: 339
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0df3e722aa3ed45879032be6caa0e451
+      internalID: -1178223347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasy_Inside_Shops_1
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 672
+        width: 48
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc5e4c64a96f64336abda24caa9c0ced
+      internalID: -296236115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasy_Inside_Shops_2
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 336
+        width: 143
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be7cf78c41d8846f1869e23af02e5f53
+      internalID: 276519977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasy_Inside_Shops_3
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 358
+        width: 42
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e40a5a44baef843cb8d968cefa76c907
+      internalID: -1207157595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasy_Inside_Shops_4
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 336
+        width: 47
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ac4d2d90db404842af161fde500f566
+      internalID: -927409588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasy_Inside_Shops_5
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 336
+        width: 47
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3254f52c80af4364808981116d51e80
+      internalID: 45807088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasy_Inside_Shops_6
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 336
+        width: 48
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dafe28a8530d74cdb962720b6aa8933d
+      internalID: 171037901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasy_Inside_Shops_7
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 399
+        width: 41
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f7d611610971453cb06ebac028f6d37
+      internalID: -503444263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasy_Inside_Shops_8
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 405
+        width: 44
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a529a48579e5460faa71797e4bb99fe
+      internalID: 1691722405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasy_Inside_Shops_9
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 237
+        width: 48
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 913697d42ff294374a08c6067a7ed764
+      internalID: -1527221756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasy_Inside_Shops_10
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 288
+        width: 44
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7141be15e9394435adffa6e30a4a05d
+      internalID: -610805944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasy_Inside_Shops_11
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 288
+        width: 188
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 538d6ca7482224ce58bac3ab3e05c716
+      internalID: -590590137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasy_Inside_Shops_12
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 308
+        width: 10
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c7f46cf10f8e4064bfdb2d68ea97c77
+      internalID: 2042948045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasy_Inside_Shops_13
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 304
+        width: 16
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 110f23230618745d59b90aedecbfe04a
+      internalID: 1452583762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasy_Inside_Shops_14
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 296
+        width: 22
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc198d3ebbcd44d9fa72eb2d478e7ad8
+      internalID: -1160463045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasy_Inside_Shops_15
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 298
+        width: 23
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9c79f56c80eb4901acf37c74508a2f1
+      internalID: 303968862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasy_Inside_Shops_16
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 245
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9e6c4bdc7aa94d17a92845eb74e8874
+      internalID: -7034262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasy_Inside_Shops_17
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 143
+        width: 49
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37c4c5de1726d48bfa34181b79f8c624
+      internalID: 669604442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasy_Inside_Shops_18
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 116
+        width: 45
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e64598a55b144371a55b862167b4c0a
+      internalID: -205141859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasy_Inside_Shops_19
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 120
+        width: 38
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d94c6f11b2b98451882d2b28befa2eb0
+      internalID: 1370582993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasy_Inside_Shops_20
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 121
+        width: 40
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb4c6d3f8c4e949a1980164904ecd9f5
+      internalID: -1983688554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasy_Inside_Shops_21
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 117
+        width: 96
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bdbcc400afb443f8aa2688f868fd7c3
+      internalID: -549211595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasy_Inside_Shops_22
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 156
+        width: 10
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f16affa43c1b3446186373fc9daedf17
+      internalID: 581598084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasy_Inside_Shops_23
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 156
+        width: 10
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f2f88c66901d47c596e945564c1aa9c
+      internalID: 598458019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasy_Inside_Shops_24
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 156
+        width: 10
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 662559eb533b2434f828116a83feb315
+      internalID: 1601319208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasy_Inside_Shops_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 24
+        width: 288
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9e4211fa9a274d74bcaafb6c46c5c6d
+      internalID: -435567909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasy_Inside_Shops_26
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 48
+        width: 38
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4b59f737a8ca4bc9967df1efb54fc84
+      internalID: -472061918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasy_Inside_Shops_27
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 24
+        width: 288
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ffec52f72cdc4e808f0cdd8f23baa7d
+      internalID: -302555026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasy_Inside_Shops_28
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 48
+        width: 10
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecfe9f49de9a54f0da50eb3a2fc92197
+      internalID: 851047864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -114,7 +723,36 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Fantasy_Inside_Shops_0: -1178223347
+      Fantasy_Inside_Shops_1: -296236115
+      Fantasy_Inside_Shops_10: -610805944
+      Fantasy_Inside_Shops_11: -590590137
+      Fantasy_Inside_Shops_12: 2042948045
+      Fantasy_Inside_Shops_13: 1452583762
+      Fantasy_Inside_Shops_14: -1160463045
+      Fantasy_Inside_Shops_15: 303968862
+      Fantasy_Inside_Shops_16: -7034262
+      Fantasy_Inside_Shops_17: 669604442
+      Fantasy_Inside_Shops_18: -205141859
+      Fantasy_Inside_Shops_19: 1370582993
+      Fantasy_Inside_Shops_2: 276519977
+      Fantasy_Inside_Shops_20: -1983688554
+      Fantasy_Inside_Shops_21: -549211595
+      Fantasy_Inside_Shops_22: 581598084
+      Fantasy_Inside_Shops_23: 598458019
+      Fantasy_Inside_Shops_24: 1601319208
+      Fantasy_Inside_Shops_25: -435567909
+      Fantasy_Inside_Shops_26: -472061918
+      Fantasy_Inside_Shops_27: -302555026
+      Fantasy_Inside_Shops_28: 851047864
+      Fantasy_Inside_Shops_3: -1207157595
+      Fantasy_Inside_Shops_4: -927409588
+      Fantasy_Inside_Shops_5: 45807088
+      Fantasy_Inside_Shops_6: 171037901
+      Fantasy_Inside_Shops_7: -503444263
+      Fantasy_Inside_Shops_8: 1691722405
+      Fantasy_Inside_Shops_9: -1527221756
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

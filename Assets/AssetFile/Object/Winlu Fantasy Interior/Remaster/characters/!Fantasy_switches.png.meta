@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -103,7 +103,889 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: '!Fantasy_switches_0'
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 697
+        width: 44
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6900f264b08c5480ea98f4387e370966
+      internalID: 2731476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Fantasy_switches_1'
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 697
+        width: 44
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a97edf4637634472b30062e337d5348
+      internalID: -1271873423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Fantasy_switches_2'
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 697
+        width: 44
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d1ab5fc7bd1d4a50acc147787d7203a
+      internalID: 1869871204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Fantasy_switches_3'
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 702
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88421f3cf083a4bca87d39e26e7bfcf6
+      internalID: -1134909797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Fantasy_switches_4'
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 702
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17178c21f4e41423f85ec72da3ee7098
+      internalID: 2034188347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Fantasy_switches_5'
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 702
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bc931102c77248639fd60283d60b9b7
+      internalID: -620950745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Fantasy_switches_6'
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 702
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daf70fb0807584a8bbc619219e7eb68f
+      internalID: 914936087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Fantasy_switches_7'
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 702
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdc7fc9c83ae0400b8dfd87eb75ac769
+      internalID: -1251260725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Fantasy_switches_8'
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 702
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d13c836ef204d47e2b787d65e1df8601
+      internalID: 388011362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Fantasy_switches_9'
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 601
+        width: 43
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf74ad1c577524bf4bbe84777eb2eb0f
+      internalID: 1102848890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Fantasy_switches_10'
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 601
+        width: 43
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43bac853f46f440c894364ed42cfcd7b
+      internalID: -391959505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Fantasy_switches_11'
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 601
+        width: 43
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3182b8ab01b8640b9b2493f0a3b797ac
+      internalID: -2100284128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Fantasy_switches_12'
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 606
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d147debeca474dbabcebef048a9251c
+      internalID: 299862133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Fantasy_switches_13'
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 606
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a17c51c6397c84715a91b3d5b9b20c63
+      internalID: -767762861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Fantasy_switches_14'
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 606
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe110fb6e65dd4dfa9251cc5cbea0272
+      internalID: -172636693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Fantasy_switches_15'
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 606
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf836758126e64a8da57b2e008ea9ad0
+      internalID: -1237520556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Fantasy_switches_16'
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 606
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60d56b6ab30554ea5819fe25964f972b
+      internalID: 653444109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Fantasy_switches_17'
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 606
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7919bd428dc5f4f5da88d72a0cad9632
+      internalID: 1214302962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Fantasy_switches_18'
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 505
+        width: 43
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25aa05a082d824510830664798587f97
+      internalID: -1356726437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Fantasy_switches_19'
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 505
+        width: 43
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b3e8845b34b54848a7fa131163b0301
+      internalID: -2060131645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Fantasy_switches_20'
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 505
+        width: 43
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8319d23fdc8d4afe8cd7f141ff77120
+      internalID: -1975661458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Fantasy_switches_21'
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 510
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2760e35eaa823484c9bb2d985c6c9384
+      internalID: -1514949751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Fantasy_switches_22'
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 510
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e75e84792d823441dbd8935a33159c48
+      internalID: 729776758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Fantasy_switches_23'
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 510
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a905e14344ca54caa8bb163a961e6b71
+      internalID: 1225708909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Fantasy_switches_24'
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 510
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a8a31656d16e446683b7d8dc52f1e1c
+      internalID: 1040598042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Fantasy_switches_25'
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 510
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4e7d0d34964a4808a682944afc854dd
+      internalID: -456823225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Fantasy_switches_26'
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 510
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a425372360fc414c9625be885ca8fb2
+      internalID: -1013160983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Fantasy_switches_27'
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 414
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64addba262f2141b082cb2098f180668
+      internalID: -800583024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Fantasy_switches_28'
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 414
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cce43e071b067468fa3e65725bbd37ce
+      internalID: 566671195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Fantasy_switches_29'
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 414
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08fab64dcf3cd4f6fb0e66a486d9abce
+      internalID: -446410817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Fantasy_switches_30'
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 414
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e833c3a8048284bfab6292bab40a7cf8
+      internalID: 1810587711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Fantasy_switches_31'
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 414
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b51858fbae14408bb537569bc8a3e22
+      internalID: -440818731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Fantasy_switches_32'
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 414
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee9513cb793c849e4bc22409437bd8cb
+      internalID: 124672209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Fantasy_switches_33'
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 290
+        width: 44
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a48e384f87f864569ba8e7203ed82d67
+      internalID: 1454167084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Fantasy_switches_34'
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 290
+        width: 44
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 366ee57253ec04e95a22f073c9ed7a85
+      internalID: -796991233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Fantasy_switches_35'
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 290
+        width: 44
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 462ea7f0bb0c84541913af3ca99e4fb9
+      internalID: 341179856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Fantasy_switches_36'
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 194
+        width: 43
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa0893485383149fa8363b52ee5ba6a3
+      internalID: 1304160835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Fantasy_switches_37'
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 194
+        width: 43
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 265f74eb1f3fd4cfda268bc0969d2a02
+      internalID: -234890157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Fantasy_switches_38'
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 194
+        width: 43
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5d41b02de7e74b498113b45ed429852
+      internalID: -1173947412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Fantasy_switches_39'
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 98
+        width: 43
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 563902c834c6a4c0e9d53b26d108e091
+      internalID: 559545737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Fantasy_switches_40'
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 98
+        width: 43
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9481d215fd3ed4da6ae451dc9de4e596
+      internalID: -642765395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '!Fantasy_switches_41'
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 98
+        width: 43
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15cf19ef205cf418aa5db9e7acf9f760
+      internalID: 1835101359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -114,7 +996,49 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      '!Fantasy_switches_0': 2731476
+      '!Fantasy_switches_1': -1271873423
+      '!Fantasy_switches_10': -391959505
+      '!Fantasy_switches_11': -2100284128
+      '!Fantasy_switches_12': 299862133
+      '!Fantasy_switches_13': -767762861
+      '!Fantasy_switches_14': -172636693
+      '!Fantasy_switches_15': -1237520556
+      '!Fantasy_switches_16': 653444109
+      '!Fantasy_switches_17': 1214302962
+      '!Fantasy_switches_18': -1356726437
+      '!Fantasy_switches_19': -2060131645
+      '!Fantasy_switches_2': 1869871204
+      '!Fantasy_switches_20': -1975661458
+      '!Fantasy_switches_21': -1514949751
+      '!Fantasy_switches_22': 729776758
+      '!Fantasy_switches_23': 1225708909
+      '!Fantasy_switches_24': 1040598042
+      '!Fantasy_switches_25': -456823225
+      '!Fantasy_switches_26': -1013160983
+      '!Fantasy_switches_27': -800583024
+      '!Fantasy_switches_28': 566671195
+      '!Fantasy_switches_29': -446410817
+      '!Fantasy_switches_3': -1134909797
+      '!Fantasy_switches_30': 1810587711
+      '!Fantasy_switches_31': -440818731
+      '!Fantasy_switches_32': 124672209
+      '!Fantasy_switches_33': 1454167084
+      '!Fantasy_switches_34': -796991233
+      '!Fantasy_switches_35': 341179856
+      '!Fantasy_switches_36': 1304160835
+      '!Fantasy_switches_37': -234890157
+      '!Fantasy_switches_38': -1173947412
+      '!Fantasy_switches_39': 559545737
+      '!Fantasy_switches_4': 2034188347
+      '!Fantasy_switches_40': -642765395
+      '!Fantasy_switches_41': 1835101359
+      '!Fantasy_switches_5': -620950745
+      '!Fantasy_switches_6': 914936087
+      '!Fantasy_switches_7': -1251260725
+      '!Fantasy_switches_8': 388011362
+      '!Fantasy_switches_9': 1102848890
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
