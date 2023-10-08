@@ -14,6 +14,9 @@ public class Move : MonoBehaviour
     public Vector2 saveMaxPos;
     public Vector2 saveMinPos;
 
+    public UIBtn uIBtn;
+    public GameObject MapItem;
+
     void Awake()
     {
         playerRb = GetComponent<Rigidbody2D>();
@@ -44,6 +47,12 @@ public class Move : MonoBehaviour
             boundaryScript = collision.GetComponent<MapTransition>();
             saveMaxPos = boundaryScript.newMaxCameraBoundary;
             saveMinPos = boundaryScript.newMinCameraBoundary;
+        }
+
+        if (collision.tag == "Map")
+        {
+            uIBtn.CheckMap = true;
+            Destroy(MapItem);
         }
     }
 }
