@@ -10,6 +10,7 @@ public class UIBtn : MonoBehaviour
     public GameObject Memo; //Memo Panel
     public GameObject Map; //Map Panel
     public GameObject MapBtn; //Map Button
+    public GameObject PlayerObj;
 
     public bool CheckItem1 = false;
     public bool CheckItem2 = false;
@@ -66,10 +67,13 @@ public class UIBtn : MonoBehaviour
             if (Memo.activeSelf == false)
             {
                 Memo.SetActive(true);
+                PlayerObj.SetActive(false);
+
             }
             else
             {
                 Memo.SetActive(false);
+                PlayerObj.SetActive(true);
             }
         }
     }

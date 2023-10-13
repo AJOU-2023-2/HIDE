@@ -15,7 +15,8 @@ public class Move : MonoBehaviour
     public Vector2 saveMinPos;
 
     public UIBtn uIBtn;
-    public GameObject MapItem;
+    public GameObject mapItem;
+    public GameObject effect;
 
     void Awake()
     {
@@ -49,10 +50,24 @@ public class Move : MonoBehaviour
             saveMinPos = boundaryScript.newMinCameraBoundary;
         }
 
-        if (collision.tag == "Map")
+        if(collision.tag == "Map")
         {
             uIBtn.CheckMap = true;
-            Destroy(MapItem);
+            Destroy(mapItem);
+            effect.SetActive(false);
         }
+
+        if(collision.tag == "MapChange")
+        {
+            transform.position = Vector2.MoveTowards(transform.position, transform.position + new Vector3(0,-1,0), 2 * Time.deltaTime);
+            playerAnim.SetBool("walk", true);
+            StartCoroutine(Walking());
+        }
+    }
+
+    IEnumerator Walking()
+    {
+        yield return new WaitForSeconds(0.1f);
+        playerAnim.SetBool("walk", false);
     }
 }

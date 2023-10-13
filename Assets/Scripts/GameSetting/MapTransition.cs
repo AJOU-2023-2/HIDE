@@ -8,7 +8,7 @@ public class MapTransition : MonoBehaviour
 {
     private CameraController cam;
 
-    public Transform player;
+    public GameObject player;
 
     public Vector2 newMinCameraBoundary;
     public Vector2 newMaxCameraBoundary;
@@ -36,7 +36,7 @@ public class MapTransition : MonoBehaviour
             cam.minCameraBoundary = newMinCameraBoundary;
             cam.maxCameraBoundary = newMaxCameraBoundary;
 
-            player.position = exitPos.position + (Vector3)playerPosOffset;;
+            player.transform.position = exitPos.position + (Vector3)playerPosOffset;
         }
     }
 
