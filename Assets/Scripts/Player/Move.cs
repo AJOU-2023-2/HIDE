@@ -69,5 +69,6 @@ public class Move : MonoBehaviour
     {
         yield return new WaitForSeconds(0.1f);
         playerAnim.SetBool("walk", false);
+        playerAnim.SetFloat("lastMoveY",-1);
     }
 }
