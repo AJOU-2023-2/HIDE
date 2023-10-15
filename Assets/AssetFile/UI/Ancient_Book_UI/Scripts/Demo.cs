@@ -20,7 +20,7 @@ public class Demo : MonoBehaviour
 
     public GameObject[] pages;
 
-    int currentPage;
+    public int currentPage;
     View currentView;
 
 
@@ -32,6 +32,7 @@ public class Demo : MonoBehaviour
 
     void Start()
     {
+        Debug.Log("start"); //test
         UpdatePage();
 
         nextButton.onClick.AddListener(NextPage);
@@ -53,6 +54,7 @@ public class Demo : MonoBehaviour
 
     void NextPage()
     {
+        Debug.Log("this is next page"); //test
         bookController.NextPage();
         currentPage = Mathf.Min(++currentPage, pages.Length - 1);
         StartCoroutine(UpdatePageDelayed());
@@ -60,6 +62,7 @@ public class Demo : MonoBehaviour
 
     void PreviousPage()
     {
+        Debug.Log("this is previous page"); //test
         bookController.PreviousPage();
         currentPage = Mathf.Max(--currentPage, 0);
         StartCoroutine(UpdatePageDelayed());
@@ -67,15 +70,16 @@ public class Demo : MonoBehaviour
     
     IEnumerator UpdatePageDelayed()
     {
+        Debug.Log("this is update delay"); //test
         yield return new WaitForEndOfFrame();
         UpdatePage();
     }
     
-    void UpdatePage()
+    public void UpdatePage()
     {
         Array.ForEach(pages, c => { c.SetActive(false);});
         pages[currentPage].SetActive(true);
-        
+        Debug.Log(currentPage); //test
         nextButton.gameObject.SetActive(currentPage < pages.Length - 1);
         previousButton.gameObject.SetActive(currentPage > 0);
     }
