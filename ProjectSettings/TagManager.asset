@@ -6,7 +6,6 @@ TagManager:
   tags:
   - Map
   - Item
-  - MapChange
   - HelenDiary
   - MiaDiary
   layers:

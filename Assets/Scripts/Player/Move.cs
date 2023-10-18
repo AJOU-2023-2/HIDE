@@ -6,7 +6,7 @@ using UnityEngine;
 public class Move : MonoBehaviour
 {
     private Rigidbody2D playerRb;
-    private Animator playerAnim;
+    public Animator playerAnim;
     private MapTransition boundaryScript;
 
     public float playerSpeed;
@@ -56,19 +56,5 @@ public class Move : MonoBehaviour
             Destroy(mapItem);
             effect.SetActive(false);
         }
-
-        if(collision.tag == "MapChange")
-        {
-            transform.position = Vector2.MoveTowards(transform.position, transform.position + new Vector3(0,-1,0), 2 * Time.deltaTime);
-            playerAnim.SetBool("walk", true);
-            StartCoroutine(Walking());
-        }
-    }
-
-    IEnumerator Walking()
-    {
-        yield return new WaitForSeconds(0.1f);
-        playerAnim.SetBool("walk", false);
-        playerAnim.SetFloat("lastMoveY",-1);
     }
 }
