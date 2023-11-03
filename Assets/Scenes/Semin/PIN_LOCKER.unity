@@ -202,6 +202,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pin Code Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 3771982247803910117, guid: 772f2f2e170152145a37dc9ba1898f45, type: 3}
+      propertyPath: PIN
+      value: 6253
+      objectReference: {fileID: 0}
     - target: {fileID: 3771982247803910118, guid: 772f2f2e170152145a37dc9ba1898f45, type: 3}
       propertyPath: m_Pivot.x
       value: 0
