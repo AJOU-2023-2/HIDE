@@ -6897,7 +6897,7 @@ GameObject:
   - component: {fileID: 1876144877}
   - component: {fileID: 1876144876}
   m_Layer: 5
-  m_Name: TextPanel
+  m_Name: DiaryTextPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
