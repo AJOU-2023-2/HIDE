@@ -8,6 +8,9 @@ TagManager:
   - Item
   - HelenDiary
   - MiaDiary
+  - MapChange
+  - Area
+  - Block
   layers:
   - Default
   - TransparentFX
