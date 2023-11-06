@@ -8,7 +8,7 @@ namespace PinLocker
     {
         [SerializeField] private TMP_Text pinText;
 
-        public int PIN = 0000;
+        public int PIN = 6253;
 
         private int i = 0;
 
@@ -83,7 +83,10 @@ namespace PinLocker
 
             ExampleUnlockText.SetActive(true); //Remove this line of Code, as this just for Demo
 
-            Debug.Log("ADD YOUR UNLOCK FEATURE HERE !");
+            Debug.Log("Done");
+
+            GameObject pin = GameObject.Find("Pin");
+            pin.SetActive(false);
         }
 
         IEnumerator PIN_INCORRECT() // PIN IS INCORRECT

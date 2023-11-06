@@ -1,5 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.Security.Cryptography;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
@@ -17,6 +20,8 @@ public class Move : MonoBehaviour
     public UIBtn uIBtn;
     public GameObject mapItem;
     public GameObject effect;
+
+    private Transform PinLocker;
 
     void Awake()
     {
@@ -55,6 +60,15 @@ public class Move : MonoBehaviour
             uIBtn.CheckMap = true;
             Destroy(mapItem);
             effect.SetActive(false);
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "PinLocker")
+        {
+            PinLocker = GameObject.Find("PinLocker").transform.Find("Pin");
+            PinLocker.gameObject.SetActive(true);
         }
     }
 }

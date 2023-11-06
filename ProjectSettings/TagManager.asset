@@ -11,6 +11,8 @@ TagManager:
   - MapChange
   - Area
   - Block
+  - PinLocker
+  - Pin
   layers:
   - Default
   - TransparentFX
