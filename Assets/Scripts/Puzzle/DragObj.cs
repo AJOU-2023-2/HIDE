@@ -4,7 +4,14 @@ using UnityEngine;
 
 public class DragObj : MonoBehaviour
 {   
-    float distance = 3.0f;
+    private float distance = 3.0f;
+    private Vector3 pos;
+
+    void Start()
+    {
+        pos = this.transform.position;
+    }
+
     void OnMouseDrag()
     { 
         Vector3 mousePosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, distance);
@@ -12,8 +19,13 @@ public class DragObj : MonoBehaviour
         transform.position = objPosition;
     }
 
-    public float GetHeight()
+    // public float GetHeight()
+    // {
+    //     return transform.position.y;
+    // }
+
+    public void MoveObj()
     {
-        return transform.position.y;
+        this.transform.position = pos;
     }
 }
