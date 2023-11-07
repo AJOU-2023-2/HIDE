@@ -16,7 +16,7 @@ public class DragGame : MonoBehaviour
         if (other.CompareTag("Block"))
         {
             DragObj stackableObject = other.GetComponent<DragObj>();
-            currentHeight += stackableObject.GetHeight(); // 물체의 높이 더하기
+            //currentHeight += stackableObject.GetHeight(); // 물체의 높이 더하기
             if (currentHeight >= targetHeight && !isCounting) // 높이가 목표치에 도달하면 카운트 시작
             {
                 isCounting = true;
@@ -27,16 +27,16 @@ public class DragGame : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("Block"))
-        {
-            DragObj stackableObject = other.GetComponent<DragObj>();
-            currentHeight -= stackableObject.GetHeight(); // 물체의 높이 빼기
-            if (isCounting && currentHeight < targetHeight) // 높이가 목표치 미만이면 카운트 중단
-            {
-                isCounting = false;
-                CancelInvoke("CountDown");
-            }
-        }
+        // if (other.CompareTag("Block"))
+        // {
+        //     DragObj stackableObject = other.GetComponent<DragObj>();
+        //     currentHeight -= stackableObject.GetHeight(); // 물체의 높이 빼기
+        //     if (isCounting && currentHeight < targetHeight) // 높이가 목표치 미만이면 카운트 중단
+        //     {
+        //         isCounting = false;
+        //         CancelInvoke("CountDown");
+        //     }
+        // }
     }
 
     void CountDown()
