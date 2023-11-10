@@ -225,7 +225,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -272,6 +272,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1be6b2f1476a94582b4ffd605814a463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dragCheck: 0
 --- !u!1 &253405127
 GameObject:
   m_ObjectHideFlags: 0
@@ -432,7 +433,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -466,6 +467,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1be6b2f1476a94582b4ffd605814a463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dragCheck: 0
 --- !u!1 &319489309
 GameObject:
   m_ObjectHideFlags: 0
@@ -626,7 +628,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -676,6 +678,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1be6b2f1476a94582b4ffd605814a463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dragCheck: 0
 --- !u!1 &509230425
 GameObject:
   m_ObjectHideFlags: 0
@@ -778,7 +781,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -825,6 +828,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1be6b2f1476a94582b4ffd605814a463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dragCheck: 0
 --- !u!1 &585135802
 GameObject:
   m_ObjectHideFlags: 0
@@ -875,7 +879,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -975,6 +979,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1be6b2f1476a94582b4ffd605814a463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dragCheck: 0
 --- !u!1 &637633844
 GameObject:
   m_ObjectHideFlags: 0
@@ -1077,7 +1082,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -1125,6 +1130,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1be6b2f1476a94582b4ffd605814a463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dragCheck: 0
 --- !u!1 &669548980
 GameObject:
   m_ObjectHideFlags: 0
@@ -1175,7 +1181,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -1261,6 +1267,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1be6b2f1476a94582b4ffd605814a463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dragCheck: 0
 --- !u!1 &682217435
 GameObject:
   m_ObjectHideFlags: 0
@@ -1308,6 +1315,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1be6b2f1476a94582b4ffd605814a463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dragCheck: 0
 --- !u!50 &682217438
 Rigidbody2D:
   serializedVersion: 4
@@ -1323,7 +1331,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -1461,7 +1469,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -1561,6 +1569,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1be6b2f1476a94582b4ffd605814a463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dragCheck: 0
 --- !u!1 &743236451
 GameObject:
   m_ObjectHideFlags: 0
@@ -1608,6 +1617,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   touchCount: 0
   timer: 0
+  timerCheck: 0
   countText: {fileID: 1368606062}
   startButton: {fileID: 997662466}
   restartButton: {fileID: 1377274883}
@@ -1827,7 +1837,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -1927,6 +1937,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1be6b2f1476a94582b4ffd605814a463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dragCheck: 0
 --- !u!1 &964113980
 GameObject:
   m_ObjectHideFlags: 0
@@ -2281,7 +2292,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -2331,6 +2342,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1be6b2f1476a94582b4ffd605814a463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dragCheck: 0
 --- !u!1 &1054273088
 GameObject:
   m_ObjectHideFlags: 0
@@ -2866,6 +2878,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1be6b2f1476a94582b4ffd605814a463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dragCheck: 0
 --- !u!50 &1545400832
 Rigidbody2D:
   serializedVersion: 4
@@ -2881,7 +2894,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -3425,7 +3438,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -3475,3 +3488,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1be6b2f1476a94582b4ffd605814a463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dragCheck: 0

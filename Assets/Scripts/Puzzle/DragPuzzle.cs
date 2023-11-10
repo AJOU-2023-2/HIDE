@@ -8,12 +8,17 @@ public class DragPuzzle : MonoBehaviour
     public int touchCount = 0;
     public float timer = 0f;
     private bool gameClear = false;
-    private bool timerCheck = false;
+    public bool timerCheck = false;
     private GameObject[] objs;
 
     public GameObject countText;
     public GameObject startButton;
     public GameObject restartButton;
+
+    void Start()
+    {
+        objs = GameObject.FindGameObjectsWithTag("Block");
+    }
 
     void Update()
     {
@@ -51,14 +56,22 @@ public class DragPuzzle : MonoBehaviour
 
     public void StartCount()
     {
+        foreach(GameObject obj in objs)
+        {
+            obj.GetComponent<Rigidbody2D>().gravityScale = 1;
+            obj.GetComponent<DragObj>().dragCheck = false;
+        }
+
         if(touchCount > 0)
         {
+            timer = 0;
             startButton.SetActive(false);
             restartButton.SetActive(true);
             countText.SetActive(true);
             timerCheck = true;
         }
         else {
+            timer = 0;
             startButton.SetActive(false);
             restartButton.SetActive(true);
             StartCoroutine(fail());
@@ -72,10 +85,11 @@ public class DragPuzzle : MonoBehaviour
         countText.SetActive(false);
         restartButton.SetActive(false);
         startButton.SetActive(true);
-        objs = GameObject.FindGameObjectsWithTag("Block");
         foreach(GameObject obj in objs)
         {
             obj.GetComponent<DragObj>().MoveObj();
+            obj.GetComponent<Rigidbody2D>().gravityScale = 0;
+            obj.GetComponent<DragObj>().dragCheck = true;
         }
     }
 
