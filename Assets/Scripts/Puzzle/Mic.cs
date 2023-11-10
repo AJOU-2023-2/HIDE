@@ -12,10 +12,18 @@ public class Mic : MonoBehaviour
     public int resultValue;
     public int cutValue;
 
+    public GameObject myLight;
+    private UnityEngine.Rendering.Universal.Light2D myLightScript;
+    [SerializeField] private float rangeIncrease = 0.005f;
+    [SerializeField] private float minRange = 0f;
+    [SerializeField] private float maxRangeOuter = 4f;
+    [SerializeField] private float maxRangeInner = 2f;
+
     void Start()
     {
         samples = new float[sampleRate];
         aud = Microphone.Start(Microphone.devices[0].ToString(),true,1,sampleRate);
+        myLightScript = myLight.GetComponent<UnityEngine.Rendering.Universal.Light2D>();
     }
 
     public void Update()
@@ -45,5 +53,19 @@ public class Mic : MonoBehaviour
         
         if(resultValue > 70)
             Debug.Log("GameOver");
+        
+        if(myLightScript != null)
+        {
+            if(resultValue > 30)
+            {
+                myLightScript.pointLightInnerRadius = Mathf.Clamp(myLightScript.pointLightInnerRadius + rangeIncrease, minRange, maxRangeInner);
+                myLightScript.pointLightOuterRadius = Mathf.Clamp(myLightScript.pointLightOuterRadius + rangeIncrease, minRange, maxRangeOuter);
+            }
+            else
+            {
+                myLightScript.pointLightInnerRadius = Mathf.Clamp(myLightScript.pointLightInnerRadius - rangeIncrease, minRange, maxRangeInner);
+                myLightScript.pointLightOuterRadius = Mathf.Clamp(myLightScript.pointLightOuterRadius - rangeIncrease, minRange, maxRangeOuter);
+            }
+        }
     }
 }
