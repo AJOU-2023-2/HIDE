@@ -15,7 +15,6 @@ public class Mic : MonoBehaviour
 
     public Button recordButton;
     private bool micCheck = false;
-    private readonly int duration = 5;
     private int index;
 
     public GameObject myLight;
@@ -28,9 +27,6 @@ public class Mic : MonoBehaviour
 
     void Start()
     {
-        #if UNITY_WEBGL && !UNITY_EDITOR
-        dropdown.options.Add(new Dropdown.OptionData("Microphone not supported on WebGL"));
-        #else
         foreach (var device in Microphone.devices)
         {
             dropdown.options.Add(new Dropdown.OptionData(device));
@@ -42,7 +38,6 @@ public class Mic : MonoBehaviour
         dropdown.onValueChanged.AddListener(ChangeMicrophone);
 
         dropdown.SetValueWithoutNotify(index);
-        #endif
 
         samples = new float[sampleRate];
         myLightScript = myLight.GetComponent<UnityEngine.Rendering.Universal.Light2D>();
@@ -57,9 +52,7 @@ public class Mic : MonoBehaviour
     {
         index = PlayerPrefs.GetInt("user-mic-device-index");
         
-        #if !UNITY_WEBGL
-        aud = Microphone.Start(dropdown.options[index].text, false, duration, 44100);
-        #endif
+        aud = Microphone.Start(dropdown.options[index].text.ToString(), true, 1, sampleRate);
 
         if(dropdown.options[index].text != null) micCheck = true;
     }
@@ -102,7 +95,7 @@ public class Mic : MonoBehaviour
             
             if(myLightScript != null)
             {
-                if(resultValue > 30)
+                if(resultValue > 60)
                 {
                     myLightScript.pointLightInnerRadius = Mathf.Clamp(myLightScript.pointLightInnerRadius + rangeIncrease, minRange, maxRangeInner);
                     myLightScript.pointLightOuterRadius = Mathf.Clamp(myLightScript.pointLightOuterRadius + rangeIncrease, minRange, maxRangeOuter);
