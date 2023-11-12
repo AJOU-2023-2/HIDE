@@ -9,6 +9,8 @@ namespace PinLocker
         [SerializeField] private TMP_Text pinText;
 
         public int PIN = 6253;
+        public GameObject Box;
+        public GameObject Key;
 
         private int i = 0;
 
@@ -87,6 +89,8 @@ namespace PinLocker
 
             GameObject pin = GameObject.Find("Pin");
             pin.SetActive(false);
+            Box.SetActive(false);
+            Key.SetActive(true);
         }
 
         IEnumerator PIN_INCORRECT() // PIN IS INCORRECT
