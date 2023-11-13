@@ -14,18 +14,20 @@ public class MapTransition : MonoBehaviour
     public Vector2 newMinCameraBoundary;
     public Vector2 newMaxCameraBoundary;
 
+    [SerializeField] Vector2 playerPosOffset;
+    [SerializeField] Transform exitPos;
+
+    //방 이름 체크 변수
     public GameObject roomUI;
     public TextMeshProUGUI roomTextUI;
     public string roomName;
     public bool uiCheck;
 
-    public bool mapChange; //층수 맵 바꾸기 위한 변수
+    //UI 변수
     public GameObject mapChangeUI;
+    public GameObject changeNoTextUI;
+    public GameObject changeYesTextUI;
     public GameObject yesButton;
-
-    [SerializeField] Vector2 playerPosOffset;
-
-    [SerializeField] Transform exitPos;
 
     private void Awake()
     {
@@ -42,6 +44,13 @@ public class MapTransition : MonoBehaviour
                 mapChangeUI.SetActive(true);
                 yesButton.SetActive(true);
                 Time.timeScale = 0;
+            }else if(roomName == "빈방" || roomName == "손님방" || roomName == "갤러리")
+            {
+                //나중에 인벤토리 아이템 스크립트랑 연동해서 아이템 이름이랑 방 이름이랑 같을 시 알맞은 UI 뜨도록 설정
+                mapChangeUI.SetActive(true);
+                changeNoTextUI.SetActive(true);
+
+
             }else {
                 if(uiCheck == true)
                     StartCoroutine(StartFadeCoroutine());
@@ -49,6 +58,18 @@ public class MapTransition : MonoBehaviour
                 cam.maxCameraBoundary = newMaxCameraBoundary;
 
                 player.transform.position = exitPos.position + (Vector3)playerPosOffset;
+            }
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if(collision.tag == "Player")
+        {
+            if(roomName == "빈방" || roomName == "손님방" || roomName == "갤러리")
+            {
+                mapChangeUI.SetActive(false);
+                changeNoTextUI.SetActive(false);
             }
         }
     }
@@ -98,6 +119,7 @@ public class MapTransition : MonoBehaviour
 
     public void NoBtn()
     {
+        Time.timeScale = 1;
         mapChangeUI.SetActive(false);
     }
 }
