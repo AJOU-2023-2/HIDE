@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
 
@@ -38,8 +39,7 @@ public class Exit : MonoBehaviour
 
     public void YesBtn()
     {
-        Time.timeScale = 1;
-        //엔딩 씬으로 전환
+        SceneManager.LoadScene("Ending");
     }
 
     public void NoBtn()

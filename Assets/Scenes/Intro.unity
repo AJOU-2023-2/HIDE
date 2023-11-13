@@ -1333,7 +1333,7 @@ MonoBehaviour:
   - "\uB098\uB294 \uB0B4 \uCE5C\uAD6C\uB97C \uCC3E\uC73C\uB7EC, \uADF8\uB9AC\uACE0
     \uC774 \uC0AC\uAC74\uC758 \uBC94\uC778\uACFC \uC9C4\uC0C1\uC744 \uC54C\uC544\uB0B4\uB7EC
     \uC774 \uC800\uD0DD\uC5D0 \uBC1C\uC744 \uB4E4\uC600\uB2E4. "
-  CharPerSeconds: 10
+  CharPerSeconds: 15
 --- !u!114 &2016798720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1485,7 +1485,7 @@ MonoBehaviour:
   text: {fileID: 2070264061}
   _dialog:
   - "1987\uB144 11\uC6D4 13\uC77C"
-  CharPerSeconds: 3
+  CharPerSeconds: 5
 --- !u!114 &2070264061
 MonoBehaviour:
   m_ObjectHideFlags: 0

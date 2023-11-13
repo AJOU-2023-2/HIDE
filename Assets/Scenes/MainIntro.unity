@@ -103463,7 +103463,7 @@ MonoBehaviour:
   - "\uAD49\uC7A5\uD788 \uB4DC\uB113\uC740 \uC800\uD0DD\uC774\uAD70\u2026"
   - "(\uC6B0\uC120 \uD53C\uD574\uC790\uC778 \uB85C\uBC84\uD2B8\uC640 \uD5EC\uB80C\uC758
     \uBC29\uBD80\uD130 \uAC00\uBCF4\uB294 \uAC83\uC774 \uC88B\uACA0\uC5B4.)"
-  CharPerSeconds: 10
+  CharPerSeconds: 15
 --- !u!114 &1245991376
 MonoBehaviour:
   m_ObjectHideFlags: 0
