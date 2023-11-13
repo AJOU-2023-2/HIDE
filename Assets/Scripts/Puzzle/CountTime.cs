@@ -7,17 +7,21 @@ public class CountTime : MonoBehaviour
 {
     public GameObject controlObject;
 
-    private DragPuzzle controlScript;
+    private DragMiniGame controlScript;
+    private bool clear;
 
     void Start()
     {
-        controlScript = controlObject.GetComponent<DragPuzzle>();
+        controlScript = controlObject.GetComponent<DragMiniGame>();
     }
 
     void Update()
     {
-        if(controlScript.touchCount > 0 && controlScript.timerCheck)
-            this.GetComponent<TextMeshProUGUI>().text = "남은 시간 : " + controlScript.timer;
+        if(controlScript.touchCount > 0 && controlScript.timerCheck && !clear)
+        {
+            this.GetComponent<TextMeshProUGUI>().text = "남은 시간 : " + Mathf.Round(controlScript.timer);
+            if(controlScript.timer >= 5) clear = true;
+        }
         else controlScript.timer = 0;
     }
 }

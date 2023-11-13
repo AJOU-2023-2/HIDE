@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class DragPuzzle : MonoBehaviour
+public class DragMiniGame : MonoBehaviour
 {
     public int touchCount = 0;
     public float timer = 0f;
@@ -14,10 +14,13 @@ public class DragPuzzle : MonoBehaviour
     public GameObject countText;
     public GameObject startButton;
     public GameObject restartButton;
+    public GameObject clearText;
 
     void Start()
     {
         objs = GameObject.FindGameObjectsWithTag("Block");
+        foreach(GameObject obj in objs)
+            obj.GetComponent<Rigidbody2D>().velocity = new Vector2(0,0);
     }
 
     void Update()
@@ -26,23 +29,19 @@ public class DragPuzzle : MonoBehaviour
         {
             timer += Time.deltaTime;
             if (timer >= 5f)
-            {
                 gameClear = true;
-            }
         }
 
         if (gameClear)
         {
-            Debug.Log("게임 클리어!");
+            clearText.SetActive(true);
         }
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Block"))
-        {
             touchCount++;
-        }
     }
 
     void OnTriggerExit2D(Collider2D other)
@@ -82,12 +81,14 @@ public class DragPuzzle : MonoBehaviour
     public void ReStart()
     {
         timer = 0;
+        timerCheck = false;
         countText.SetActive(false);
         restartButton.SetActive(false);
         startButton.SetActive(true);
         foreach(GameObject obj in objs)
         {
             obj.GetComponent<DragObj>().MoveObj();
+            obj.GetComponent<Rigidbody2D>().velocity = new Vector2(0,0);
             obj.GetComponent<Rigidbody2D>().gravityScale = 0;
             obj.GetComponent<DragObj>().dragCheck = true;
         }
