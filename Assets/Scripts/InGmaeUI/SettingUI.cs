@@ -7,21 +7,25 @@ using UnityEngine.UI;
 public class SettingUI : MonoBehaviour
 {
     public GameObject OptionBtn;
-    public GameObject CloseBtn;
+    public GameObject CloseOptionBtn;
+    public GameObject CloseMenualBtn;
+
     public GameObject WarningPanel;
     public GameObject OptionPanel;
+    public GameObject MenunalPanel;
+
 
     public void SettingBtn()
     {
-        if (OptionBtn.activeSelf == true || CloseBtn.activeSelf == true)  //If Setting is opened,
+        if (OptionBtn.activeSelf == true || CloseOptionBtn.activeSelf == true)  //If Setting is opened,
         {
-            OptionBtn.SetActive(false); //Close Setting
-            CloseBtn.SetActive(false);
+            CloseOptionBtn.SetActive(false); //Close Setting
+            CloseOptionBtn.SetActive(false);
         }
         else
         {
             OptionBtn.SetActive(true); //Open Setting
-            CloseBtn.SetActive(true);
+            CloseOptionBtn.SetActive(true);
         }
     }
 
@@ -49,8 +53,13 @@ public class SettingUI : MonoBehaviour
         OptionPanel.SetActive(true);
     }
 
-    public void ExitBtn()
+    public void ExitOptionBtn()
     {
         OptionPanel.SetActive(false);
+    }
+
+    public void ExitMenualBtn()
+    {
+        MenunalPanel.SetActive(false);
     }
 }

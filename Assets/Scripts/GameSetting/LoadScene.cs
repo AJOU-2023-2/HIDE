@@ -51,11 +51,11 @@ public class LoadScene : MonoBehaviour
     {
         if(manualBar.activeSelf == true)
         {
-            animator.SetTrigger("doHide");
-            manualBar.SetActive(false);
+           // animator.SetTrigger("doHide");
+            panel.SetActive(false);
         }else {
-            manualBar.SetActive(true);
-            animator.SetTrigger("doShow");
+            panel.SetActive(true);
+            //animator.SetTrigger("doShow");
         }
     }
 }
