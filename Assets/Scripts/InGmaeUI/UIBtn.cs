@@ -104,7 +104,6 @@ public class UIBtn : MonoBehaviour
         if (CheckItem1 == true)
         {
             CheckItem1 = false;
-            Item1.SetActive(true); //Show Item1 Icon
             Detail1.SetActive(true); //Show only Item1's detail
             Detail2.SetActive(false);
             ItemName.text = "Test Key";
@@ -112,7 +111,6 @@ public class UIBtn : MonoBehaviour
         if (CheckItem2 == true)
         {
             CheckItem2 = false;
-            Item2.SetActive(true); //Show Item2 Icon
             Detail1.SetActive(false);
             Detail2.SetActive(true); //Show only Item2's detail
             ItemName.text = "Test Key2";

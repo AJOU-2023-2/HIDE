@@ -17,14 +17,11 @@ public class Move : MonoBehaviour
     public Vector2 saveMaxPos;
     public Vector2 saveMinPos;
 
-    public UIBtn uIBtn;
-    public GameObject mapItem;
-    public GameObject effect;
-
-    private Transform PinLocker;
+    private Transform pinLocker;
 
     void Awake()
     {
+        pinLocker = GameObject.Find("PinLocker").transform.Find("Pin");
         playerRb = GetComponent<Rigidbody2D>();
         playerAnim = GetComponent<Animator>();
     }
@@ -54,21 +51,21 @@ public class Move : MonoBehaviour
             saveMaxPos = boundaryScript.newMaxCameraBoundary;
             saveMinPos = boundaryScript.newMinCameraBoundary;
         }
-
-        if(collision.tag == "Map")
-        {
-            uIBtn.CheckMap = true;
-            Destroy(mapItem);
-            effect.SetActive(false);
-        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "PinLocker")
         {
-            PinLocker = GameObject.Find("PinLocker").transform.Find("Pin");
-            PinLocker.gameObject.SetActive(true);
+            pinLocker.gameObject.SetActive(true);
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "PinLocker")
+        {
+            pinLocker.gameObject.SetActive(false);
         }
     }
 }

@@ -23,11 +23,15 @@ public class MapTransition : MonoBehaviour
     public string roomName;
     public bool uiCheck;
 
+    //방 이동 제어
+    public string roomCheck;
+    public UIBtn UIBtn;
+
     //UI 변수
     public GameObject mapChangeUI;
-    public GameObject changeNoTextUI;
-    public GameObject changeYesTextUI;
-    public GameObject yesButton;
+    public TextMeshProUGUI textUI;
+    public GameObject yesButtonUI;
+    public GameObject NoButtonUI;
 
     private void Awake()
     {
@@ -39,19 +43,39 @@ public class MapTransition : MonoBehaviour
     {
         if(collision.tag == "Player")
         {
-            if(roomName == "1층" || roomName == "2층" || roomName == "지하")
+            if(roomName == "First Floor" || roomName == "Second Floor" || roomName == "Cellar")
             {
                 mapChangeUI.SetActive(true);
-                yesButton.SetActive(true);
+                textUI.text = "Do you want to move?";
+                yesButtonUI.SetActive(true);
+                NoButtonUI.SetActive(true);
+                yesButtonUI.GetComponent<Button>().onClick.AddListener(YesBtn);
+                NoButtonUI.GetComponent<Button>().onClick.AddListener(NoBtn);
                 Time.timeScale = 0;
-            }else if(roomName == "빈방" || roomName == "손님방" || roomName == "갤러리")
+            }else if(roomCheck == "열쇠꾸러미" || roomCheck == "빈방" || roomCheck == "딸방" || roomCheck == "손님방")
             {
-                //나중에 인벤토리 아이템 스크립트랑 연동해서 아이템 이름이랑 방 이름이랑 같을 시 알맞은 UI 뜨도록 설정
-                mapChangeUI.SetActive(true);
-                changeNoTextUI.SetActive(true);
+                if(roomCheck == "열쇠꾸러미" && UIBtn.Item1.activeSelf == true)
+                {
+                    mapChangeUI.SetActive(true);
+                    textUI.text = "Do you want to use 'A bunch of keys'?";
+                    yesButtonUI.SetActive(true);
+                    NoButtonUI.SetActive(true);
+                    yesButtonUI.GetComponent<Button>().onClick.AddListener(KeyUseBtn);
+                    NoButtonUI.GetComponent<Button>().onClick.AddListener(KeyNotUseBtn);
+                }else if(roomCheck == "손님방" && UIBtn.Item2.activeSelf == true)
+                {
+                    mapChangeUI.SetActive(true);
+                    textUI.text = "Do you want to use 'Guest room key'?";
+                    yesButtonUI.SetActive(true);
+                    NoButtonUI.SetActive(true);
+                    yesButtonUI.GetComponent<Button>().onClick.AddListener(KeyUseBtn);
+                    NoButtonUI.GetComponent<Button>().onClick.AddListener(KeyNotUseBtn);
 
-
-            }else {
+                }else{
+                    mapChangeUI.SetActive(true);
+                    textUI.text = "The door is locked.";
+                }
+            }else{
                 if(uiCheck == true)
                     StartCoroutine(StartFadeCoroutine());
                 cam.minCameraBoundary = newMinCameraBoundary;
@@ -66,10 +90,9 @@ public class MapTransition : MonoBehaviour
     {
         if(collision.tag == "Player")
         {
-            if(roomName == "빈방" || roomName == "손님방" || roomName == "갤러리")
+            if(roomCheck == "열쇠꾸러미" || roomCheck == "빈방" || roomCheck == "딸방" || roomCheck == "딸방" || roomCheck == "손님방")
             {
                 mapChangeUI.SetActive(false);
-                changeNoTextUI.SetActive(false);
             }
         }
     }
@@ -101,11 +124,35 @@ public class MapTransition : MonoBehaviour
         roomUI.SetActive(false);
     }
 
-    public void YesBtn()
+    //키 아이템 사용 할 때 쓰이는 함수
+    private void KeyUseBtn()
+    {
+        roomCheck = "";
+        mapChangeUI.SetActive(false);
+        yesButtonUI.GetComponent<Button>().onClick.RemoveListener(YesBtn);
+        NoButtonUI.GetComponent<Button>().onClick.RemoveListener(NoBtn);
+        yesButtonUI.SetActive(false);
+        NoButtonUI.SetActive(false);
+    }
+
+    private void KeyNotUseBtn()
+    {
+        mapChangeUI.SetActive(false);
+        yesButtonUI.GetComponent<Button>().onClick.RemoveListener(YesBtn);
+        NoButtonUI.GetComponent<Button>().onClick.RemoveListener(NoBtn);
+        yesButtonUI.SetActive(false);
+        NoButtonUI.SetActive(false);
+    }
+
+    //맵 바꿀 때 쓰이는 함수
+    private void YesBtn()
     {
         Time.timeScale = 1;
         mapChangeUI.SetActive(false);
-        yesButton.SetActive(false);
+        yesButtonUI.GetComponent<Button>().onClick.RemoveListener(YesBtn);
+        NoButtonUI.GetComponent<Button>().onClick.RemoveListener(NoBtn);
+        yesButtonUI.SetActive(false);
+        NoButtonUI.SetActive(false);
 
         if(uiCheck == true)
             StartCoroutine(StartFadeCoroutine());
@@ -117,9 +164,13 @@ public class MapTransition : MonoBehaviour
         moveScript.playerAnim.SetFloat("lastMoveY",-1);
     }
 
-    public void NoBtn()
+    private void NoBtn()
     {
         Time.timeScale = 1;
         mapChangeUI.SetActive(false);
+        yesButtonUI.GetComponent<Button>().onClick.RemoveListener(YesBtn);
+        NoButtonUI.GetComponent<Button>().onClick.RemoveListener(NoBtn);
+        yesButtonUI.SetActive(false);
+        NoButtonUI.SetActive(false);
     }
 }
