@@ -5,11 +5,14 @@ using UnityEngine;
 public class DragObj : MonoBehaviour
 {   
     private float distance = 3.0f;
+    private Quaternion rot;
     private Vector3 pos;
     public bool dragCheck;
 
     void Start()
     {
+        this.GetComponent<Rigidbody2D>().velocity = new Vector2(0,0);
+        rot = this.transform.rotation;
         pos = this.transform.position;
         dragCheck = true;
     }
@@ -27,5 +30,7 @@ public class DragObj : MonoBehaviour
     public void MoveObj()
     {
         this.transform.position = pos;
+        this.transform.rotation = rot;
+        this.GetComponent<Rigidbody2D>().velocity = new Vector2(0,0);
     }
 }

@@ -20,7 +20,7 @@ public class CountTime : MonoBehaviour
         if(controlScript.touchCount > 0 && controlScript.timerCheck && !clear)
         {
             this.GetComponent<TextMeshProUGUI>().text = "남은 시간 : " + Mathf.Round(controlScript.timer);
-            if(controlScript.timer >= 5) clear = true;
+            if(controlScript.timer <= 0) clear = true;
         }
         else controlScript.timer = 0;
     }

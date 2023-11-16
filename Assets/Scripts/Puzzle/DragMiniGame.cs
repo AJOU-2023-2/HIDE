@@ -2,19 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Michsky.UI.Dark; // namespace
 
 public class DragMiniGame : MonoBehaviour
 {
     public int touchCount = 0;
-    public float timer = 0f;
+    public float timer = 5f;
     private bool gameClear = false;
     public bool timerCheck = false;
+    private bool check = true;
     private GameObject[] objs;
 
     public GameObject countText;
     public GameObject startButton;
     public GameObject restartButton;
-    public GameObject clearText;
+    public ModalWindowManager myModalWindow;
 
     void Start()
     {
@@ -25,16 +27,20 @@ public class DragMiniGame : MonoBehaviour
 
     void Update()
     {
-        if (touchCount > 0 && timerCheck)
+        if(check)
         {
-            timer += Time.deltaTime;
-            if (timer >= 5f)
-                gameClear = true;
-        }
+            if (touchCount > 0 && timerCheck)
+            {
+                timer -= Time.deltaTime;
+                if (timer <= 0)
+                    gameClear = true;
+            }
 
-        if (gameClear)
-        {
-            clearText.SetActive(true);
+            if (gameClear)
+            {
+                StartCoroutine(Clear());
+                check = false;
+            }
         }
     }
 
@@ -49,7 +55,7 @@ public class DragMiniGame : MonoBehaviour
         if (other.gameObject.CompareTag("Block"))
         {
             touchCount--;
-            timer = 0;
+            timer = 5f;
         }
     }
 
@@ -63,24 +69,24 @@ public class DragMiniGame : MonoBehaviour
 
         if(touchCount > 0)
         {
-            timer = 0;
+            timer = 5f;
             startButton.SetActive(false);
             restartButton.SetActive(true);
             countText.SetActive(true);
             timerCheck = true;
         }
         else {
-            timer = 0;
+            timer = 5f;
             startButton.SetActive(false);
             restartButton.SetActive(true);
-            StartCoroutine(fail());
+            StartCoroutine(Fail());
             timerCheck = false;
         }
     }
 
     public void ReStart()
     {
-        timer = 0;
+        timer = 5f;
         timerCheck = false;
         countText.SetActive(false);
         restartButton.SetActive(false);
@@ -94,11 +100,18 @@ public class DragMiniGame : MonoBehaviour
         }
     }
 
-    IEnumerator fail()
+    IEnumerator Fail()
     {
         countText.SetActive(true);
         countText.GetComponent<TextMeshProUGUI>().text = " 다시 배치하십시오. ";
         yield return new WaitForSeconds(1f);
         countText.SetActive(false);
+    }
+
+    IEnumerator Clear()
+    {
+        myModalWindow.ModalWindowIn();
+        yield return new WaitForSeconds(1f);
+        myModalWindow.ModalWindowOut();
     }
 }
