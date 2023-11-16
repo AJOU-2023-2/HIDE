@@ -8,7 +8,12 @@ using TMPro;
 public class MiaDiaryInteraction : MonoBehaviour
 {
     public BookController bookController;
-    public HelenDiaryInteraction helen;
+    public HelenDiaryInteraction1 helen1;
+    public TomDiaryInteraction1 tom1;
+    public LucyDiaryInteraction lucy;
+    public DemianDiaryInteraction demian;
+    public HelenDiaryInteraction2 helen2;
+    public TomDiaryInteraction2 tom2;
 
     [SerializeField]
     Button nextButton;
@@ -68,7 +73,6 @@ public class MiaDiaryInteraction : MonoBehaviour
     {
         Array.ForEach(pages, c => { c.SetActive(false); });
         pages[currentPage].SetActive(true);
-        Debug.Log("mia : " + currentPage); //test
         nextButton.gameObject.SetActive(currentPage < pages.Length - 1);
         previousButton.gameObject.SetActive(currentPage > 0);
     }
@@ -78,7 +82,7 @@ public class MiaDiaryInteraction : MonoBehaviour
         if (collision.tag == "Player")
         {
             DialogPanel.SetActive(true);
-            DiaryText.text = "미아의 일기장이다. 읽어볼까?";
+            DiaryText.text = "It is Mia's diary. Should I read it?";
             Mia = true;
         }
     }
@@ -99,7 +103,12 @@ public class MiaDiaryInteraction : MonoBehaviour
         if (Mia)
         {
             currentPage = 0;   //if player activate the diary, player can see fist page of the diary
-            helen.currentPage = 0;
+            helen1.currentPage = 0;
+            tom1.currentPage = 0;
+            lucy.currentPage = 0;
+            demian.currentPage = 0;
+            helen2.currentPage = 0;
+            tom2.currentPage = 0;
             UpdatePage();
             MiaDiary.SetActive(true);
             NextBtn.SetActive(true);
