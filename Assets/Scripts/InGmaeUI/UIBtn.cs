@@ -14,11 +14,23 @@ public class UIBtn : MonoBehaviour
 
     public bool CheckItem1 = false;
     public bool CheckItem2 = false;
+    public bool CheckItem3 = false;
+    public bool CheckItem4 = false;
+    public bool CheckItem5 = false;
+    public bool CheckItem6 = false;
     public TMP_Text ItemName;
     public GameObject Item1;
     public GameObject Item2;
+    public GameObject Item3;
+    public GameObject Item4;
+    public GameObject Item5;
+    public GameObject Item6;
     public GameObject Detail1;
     public GameObject Detail2;
+    public GameObject Detail3;
+    public GameObject Detail4;
+    public GameObject Detail5;
+    public GameObject Detail6;
 
     public bool CheckMap = false;
     public GameObject MapCellar; //Cellar Map
@@ -106,14 +118,66 @@ public class UIBtn : MonoBehaviour
             CheckItem1 = false;
             Detail1.SetActive(true); //Show only Item1's detail
             Detail2.SetActive(false);
-            ItemName.text = "Test Key";
+            Detail3.SetActive(false);
+            Detail4.SetActive(false);
+            Detail5.SetActive(false);
+            Detail6.SetActive(false);
+            ItemName.text = "A Bunch of Keys";
         }
         if (CheckItem2 == true)
         {
             CheckItem2 = false;
             Detail1.SetActive(false);
             Detail2.SetActive(true); //Show only Item2's detail
-            ItemName.text = "Test Key2";
+            Detail3.SetActive(false);
+            Detail4.SetActive(false);
+            Detail5.SetActive(false);
+            Detail6.SetActive(false);
+            ItemName.text = "Guest Room Key";
+        }
+        if (CheckItem3 == true)
+        {
+            CheckItem3 = false;
+            Detail1.SetActive(false);
+            Detail2.SetActive(false);
+            Detail3.SetActive(true); //Show only Item3's detail
+            Detail4.SetActive(false);
+            Detail5.SetActive(false);
+            Detail6.SetActive(false);
+            ItemName.text = "Lucy's Room Key";
+        }
+        if (CheckItem4 == true)
+        {
+            CheckItem4 = false;
+            Detail1.SetActive(false);
+            Detail2.SetActive(false);
+            Detail3.SetActive(false);
+            Detail4.SetActive(true); //Show only Item4's detail
+            Detail5.SetActive(false);
+            Detail6.SetActive(false);
+            ItemName.text = "Entrance Key";
+        }
+        if (CheckItem5 == true)
+        {
+            CheckItem5 = false;
+            Detail1.SetActive(false);
+            Detail2.SetActive(false);
+            Detail3.SetActive(false);
+            Detail4.SetActive(false);
+            Detail5.SetActive(true); //Show only Item5's detail
+            Detail6.SetActive(false);
+            ItemName.text = "Tom's Knife";
+        }
+        if (CheckItem6 == true)
+        {
+            CheckItem6 = false;
+            Detail1.SetActive(false);
+            Detail2.SetActive(false);
+            Detail3.SetActive(false);
+            Detail4.SetActive(false);
+            Detail5.SetActive(false);
+            Detail6.SetActive(true); //Show only Item6's detail
+            ItemName.text = "Tom's Diary";
         }
     }
 

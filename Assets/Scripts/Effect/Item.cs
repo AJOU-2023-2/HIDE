@@ -59,5 +59,33 @@ public class Item : MonoBehaviour
             playerEffect.SetActive(false);
             uIBtn.Item2.SetActive(true); //Show CusKey Icon
         }
+        if (collision.tag == "Player" && this.gameObject.tag == "LucyKey")
+        {
+            if (myInstance != null) Destroy(myInstance);
+            Destroy(this.gameObject);
+            playerEffect.SetActive(false);
+            uIBtn.Item3.SetActive(true); //Show LucyKey Icon
+        }
+        if (collision.tag == "Player" && this.gameObject.tag == "EntKey")
+        {
+            if (myInstance != null) Destroy(myInstance);
+            Destroy(this.gameObject);
+            playerEffect.SetActive(false);
+            uIBtn.Item4.SetActive(true); //Show EntKey Icon
+        }
+        if (collision.tag == "Player" && this.gameObject.tag == "Knife")
+        {
+            if (myInstance != null) Destroy(myInstance);
+            Destroy(this.gameObject);
+            playerEffect.SetActive(false);
+            uIBtn.Item5.SetActive(true); //Show Knife Icon
+        }
+        if (collision.tag == "Player" && this.gameObject.tag == "Diary")
+        {
+            if (myInstance != null) Destroy(myInstance);
+            Destroy(this.gameObject);
+            playerEffect.SetActive(false);
+            uIBtn.Item6.SetActive(true); //Show Diary Icon
+        }
     }
 }
