@@ -65,6 +65,12 @@ TagManager:
   - name: Player
     uniqueID: 3385120929
     locked: 0
+  - name: Pillar
+    uniqueID: 4120814363
+    locked: 0
+  - name: fire
+    uniqueID: 3864835253
+    locked: 0
   - name: UI
     uniqueID: 514524007
     locked: 0
