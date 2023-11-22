@@ -133,6 +133,12 @@ public class MapTransition : MonoBehaviour
         NoButtonUI.GetComponent<Button>().onClick.RemoveListener(NoBtn);
         yesButtonUI.SetActive(false);
         NoButtonUI.SetActive(false);
+        if(uiCheck == true)
+            StartCoroutine(StartFadeCoroutine());
+        cam.minCameraBoundary = newMinCameraBoundary;
+        cam.maxCameraBoundary = newMaxCameraBoundary;
+
+        player.transform.position = exitPos.position + (Vector3)playerPosOffset;
     }
 
     private void KeyNotUseBtn()
