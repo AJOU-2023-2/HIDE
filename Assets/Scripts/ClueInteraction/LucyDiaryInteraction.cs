@@ -38,6 +38,11 @@ public class LucyDiaryInteraction : MonoBehaviour
 
     bool Lucy = false;
 
+    public GameObject puzzle;
+    public GameObject puzzlePanel;
+    bool read = false;
+    bool readAgain = true; //다시 뜨는 거 막기 위해 사용
+
     void Start()
     {
         UpdatePage();
@@ -96,7 +101,22 @@ public class LucyDiaryInteraction : MonoBehaviour
             NextBtn.SetActive(false);
             PreviousBtn.SetActive(false);
             Lucy = false;
+
+            if(read && readAgain)
+            {
+                this.GetComponent<AudioSource>().Play();
+                puzzle.SetActive(true);
+                StartCoroutine(ShowPuzzlePanel());
+                readAgain = false;
+            }
         }
+    }
+
+    IEnumerator ShowPuzzlePanel()
+    {
+        puzzlePanel.SetActive(true);
+        yield return new WaitForSeconds(2f);
+        puzzlePanel.SetActive(false);
     }
 
     public void ShowLucy()
@@ -114,6 +134,7 @@ public class LucyDiaryInteraction : MonoBehaviour
             LucyDiary.SetActive(true);
             NextBtn.SetActive(true);
             DialogPanel.SetActive(false);
+            read = true;
         }
     }
 

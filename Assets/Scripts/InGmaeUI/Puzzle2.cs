@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using Michsky.UI.Dark; // namespace
 
 public class Puzzle2 : MonoBehaviour, IPointerClickHandler
 {
@@ -22,7 +23,11 @@ public class Puzzle2 : MonoBehaviour, IPointerClickHandler
     public GameObject Piece15;
     public GameObject Piece16;
 
-    public bool open = false; //door open state
+    public GameObject game;
+    public GameObject roomMove;
+    public GameObject player;
+    public ModalWindowManager myModalWindow;
+    public GameObject ui;
 
     public void Update()
     {
@@ -43,9 +48,20 @@ public class Puzzle2 : MonoBehaviour, IPointerClickHandler
             && (Piece15.transform.rotation == Quaternion.Euler(0, 0, 0) || Piece15.transform.rotation == Quaternion.Euler(0, 0, 360))
             && (Piece16.transform.rotation == Quaternion.Euler(0, 0, 0) || Piece16.transform.rotation == Quaternion.Euler(0, 0, 360)))
         {
-            Debug.Log("complete");
-            open = true;
+            StartCoroutine(Clear());
         }
+    }
+
+    IEnumerator Clear()
+    {
+        myModalWindow.ModalWindowIn();
+        yield return new WaitForSeconds(1f);
+        myModalWindow.ModalWindowOut();
+        yield return new WaitForSeconds(1f);
+        game.SetActive(false);
+        player.SetActive(true);
+        roomMove.SetActive(true);
+        ui.SetActive(true);
     }
 
     public void OnPointerClick(PointerEventData eventData) //When click the puzzle piece, rotate it

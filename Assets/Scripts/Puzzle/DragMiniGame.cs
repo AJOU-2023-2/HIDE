@@ -16,7 +16,10 @@ public class DragMiniGame : MonoBehaviour
     public GameObject countText;
     public GameObject startButton;
     public GameObject restartButton;
+    public GameObject game;
+    public GameObject player;
     public ModalWindowManager myModalWindow;
+    public GameObject ui;
 
     void Start()
     {
@@ -113,5 +116,8 @@ public class DragMiniGame : MonoBehaviour
         myModalWindow.ModalWindowIn();
         yield return new WaitForSeconds(1f);
         myModalWindow.ModalWindowOut();
+        game.SetActive(false);
+        player.SetActive(true);
+        ui.SetActive(true);
     }
 }

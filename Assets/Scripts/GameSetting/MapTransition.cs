@@ -71,6 +71,15 @@ public class MapTransition : MonoBehaviour
                     yesButtonUI.GetComponent<Button>().onClick.AddListener(KeyUseBtn);
                     NoButtonUI.GetComponent<Button>().onClick.AddListener(KeyNotUseBtn);
 
+                }else if(roomCheck == "딸방" && UIBtn.Item3.activeSelf == true)
+                {
+                    mapChangeUI.SetActive(true);
+                    textUI.text = "Do you want to use 'Lucy's room key'?";
+                    yesButtonUI.SetActive(true);
+                    NoButtonUI.SetActive(true);
+                    yesButtonUI.GetComponent<Button>().onClick.AddListener(KeyUseBtn);
+                    NoButtonUI.GetComponent<Button>().onClick.AddListener(KeyNotUseBtn);
+
                 }else{
                     mapChangeUI.SetActive(true);
                     textUI.text = "The door is locked.";
