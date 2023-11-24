@@ -16,7 +16,7 @@ public class SettingUI : MonoBehaviour
     {
         if (OptionBtn.activeSelf == true || CloseOptionBtn.activeSelf == true)  //If Setting is opened,
         {
-            CloseOptionBtn.SetActive(false); //Close Setting
+            OptionBtn.SetActive(false); //Close Setting
             CloseOptionBtn.SetActive(false);
         }
         else

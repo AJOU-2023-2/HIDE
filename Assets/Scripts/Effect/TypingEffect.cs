@@ -17,6 +17,14 @@ public class TypingEffect : MonoBehaviour
     float interval;
     bool isEffect;
 
+    //인게임
+    public GameObject textpanel;
+    public GameObject characterText;
+    public GameObject characterName;
+    public GameObject characterImage;
+    public GameObject player;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -37,6 +45,15 @@ public class TypingEffect : MonoBehaviour
                 SceneManager.LoadScene("MainIntro");
             if (SceneManager.GetActiveScene().buildIndex == 2)
                 SceneManager.LoadScene("MainGame");
+            if (SceneManager.GetActiveScene().buildIndex == 3)
+            {
+                textpanel.SetActive(false);
+                characterText.SetActive(false);
+                characterName.SetActive(false);
+                characterImage.SetActive(false);
+                player.SetActive(true);
+                //player.GetComponent<Move>().enabled = true;
+            }
         }
     }
 

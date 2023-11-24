@@ -38,6 +38,17 @@ public class DemianDiaryInteraction : MonoBehaviour
 
     bool Demian = false;
 
+
+    //독백 오브젝트
+    public GameObject player;
+    public GameObject textpanel;
+    public GameObject characterText;
+    public GameObject characterName;
+    public GameObject characterImage;
+    bool read = false;
+    bool readAgain = true; //다시 뜨는 거 막기 위해 사용
+    public GameObject minigame;
+
     void Start()
     {
         UpdatePage();
@@ -96,7 +107,29 @@ public class DemianDiaryInteraction : MonoBehaviour
             NextBtn.SetActive(false);
             PreviousBtn.SetActive(false);
             Demian = false;
+
+            if(read && readAgain)
+            {
+                this.GetComponent<AudioSource>().Play();
+                StartCoroutine(ShowPanel());
+                readAgain = false;
+            }
         }
+    }
+
+    IEnumerator ShowPanel()
+    {
+        //player.GetComponent<Move>().enabled = false;
+        textpanel.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        characterImage.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        characterName.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        characterText.GetComponent<TypingEffect>()._dialog[0] = "I hear someone approaching. Is Tom still in the mansion? I need to hide quickly. I’ll pile up some items to conceal myself.";
+        characterText.GetComponent<TMP_Text>().text = characterText.GetComponent<TypingEffect>()._dialog[0];
+        characterText.SetActive(true);
+        minigame.SetActive(true);
     }
 
     public void ShowDemian()
@@ -114,6 +147,7 @@ public class DemianDiaryInteraction : MonoBehaviour
             DemianDiary.SetActive(true);
             NextBtn.SetActive(true);
             DialogPanel.SetActive(false);
+            read = true;
         }
     }
 

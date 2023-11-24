@@ -115,7 +115,7 @@ public class LucyDiaryInteraction : MonoBehaviour
     IEnumerator ShowPuzzlePanel()
     {
         puzzlePanel.SetActive(true);
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(3f);
         puzzlePanel.SetActive(false);
     }
 

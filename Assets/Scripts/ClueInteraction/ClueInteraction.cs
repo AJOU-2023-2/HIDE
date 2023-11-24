@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ClueInteraction : MonoBehaviour
 {
@@ -18,6 +19,14 @@ public class ClueInteraction : MonoBehaviour
     public GameObject mMemo;
     public GameObject oMemo2;
     public GameObject Num2;
+
+    //독백패널 오브젝트
+    public GameObject textpanel;
+    public GameObject characterText;
+    public GameObject characterName;
+    public GameObject characterImage;
+    public GameObject player;
+    public GameObject exit;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -96,6 +105,7 @@ public class ClueInteraction : MonoBehaviour
         if (collision.tag == "Player" && this.gameObject.tag == "kNote")
         {
             kNote.SetActive(false);
+            StartCoroutine(ShowPanel());
         }
         if (collision.tag == "Player" && this.gameObject.tag == "kNote1")
         {
@@ -121,5 +131,20 @@ public class ClueInteraction : MonoBehaviour
         {
             Num2.SetActive(false);
         }
+    }
+
+    IEnumerator ShowPanel()
+    {
+        exit.GetComponent<Exit>().exitcheck = 1;
+        //player.GetComponent<Move>().enabled = false;
+        textpanel.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        characterImage.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        characterName.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        characterText.SetActive(true);
+        characterText.GetComponent<TypingEffect>()._dialog[0] = "It seems Kyle has finished his investigation up to this point...";
+        characterText.GetComponent<TypingEffect>()._dialog[1] = "First, I should go to my car parked outside the mansion to report the contents of my investigation so far.";
     }
 }

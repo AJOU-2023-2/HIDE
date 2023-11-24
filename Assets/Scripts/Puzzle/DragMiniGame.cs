@@ -21,6 +21,13 @@ public class DragMiniGame : MonoBehaviour
     public ModalWindowManager myModalWindow;
     public GameObject ui;
 
+    //독백패널 오브젝트
+    public GameObject textpanel;
+    public GameObject characterText;
+    public GameObject characterName;
+    public GameObject characterImage;
+    public GameObject exit;
+
     void Start()
     {
         objs = GameObject.FindGameObjectsWithTag("Block");
@@ -97,7 +104,7 @@ public class DragMiniGame : MonoBehaviour
         foreach(GameObject obj in objs)
         {
             obj.GetComponent<DragObj>().MoveObj();
-            obj.GetComponent<Rigidbody2D>().velocity = new Vector2(0,0);
+            //obj.GetComponent<Rigidbody2D>().velocity = new Vector2(0,0);
             obj.GetComponent<Rigidbody2D>().gravityScale = 0;
             obj.GetComponent<DragObj>().dragCheck = true;
         }
@@ -106,7 +113,7 @@ public class DragMiniGame : MonoBehaviour
     IEnumerator Fail()
     {
         countText.SetActive(true);
-        countText.GetComponent<TextMeshProUGUI>().text = " 다시 배치하십시오. ";
+        countText.GetComponent<TextMeshProUGUI>().text = "Please reposition.";
         yield return new WaitForSeconds(1f);
         countText.SetActive(false);
     }
@@ -116,8 +123,24 @@ public class DragMiniGame : MonoBehaviour
         myModalWindow.ModalWindowIn();
         yield return new WaitForSeconds(1f);
         myModalWindow.ModalWindowOut();
-        game.SetActive(false);
         player.SetActive(true);
         ui.SetActive(true);
+        StartCoroutine(ShowPanel());
+    }
+
+    IEnumerator ShowPanel()
+    {
+        exit.GetComponent<Exit>().exitcheck = 2;
+        //player.GetComponent<Move>().enabled = false;
+        textpanel.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        characterImage.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        characterName.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        characterText.GetComponent<TypingEffect>()._dialog[0] = "I must get out of this mansion quickly.";
+        characterText.GetComponent<TMP_Text>().text = characterText.GetComponent<TypingEffect>()._dialog[0];
+        characterText.SetActive(true);
+        game.SetActive(false);
     }
 }
