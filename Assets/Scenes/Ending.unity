@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 297947063}
   - component: {fileID: 297947062}
+  - component: {fileID: 297947064}
   m_Layer: 0
   m_Name: newspaper
   m_TagString: Untagged
@@ -182,7 +183,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 70ef85d65059844a6a4176beff8ca1ad, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -207,6 +208,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 13.193}
+--- !u!114 &297947064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 297947061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4714ce35092c403ab0d1b3abf21e6a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &445988089
 GameObject:
   m_ObjectHideFlags: 0
@@ -383,7 +396,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -658,7 +671,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: ed86fd8bd04994ea8964a4da4339f9f8, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1251,7 +1264,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -33, y: -333}
+  m_AnchoredPosition: {x: -33, y: -309}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2016798719
@@ -1268,16 +1281,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 2016798720}
   _dialog:
-  - "1987\uB144 10\uC6D4 27\uC77C, \uC774 \uC800\uD0DD\uC5D0\uC11C \uAC00\uC871 \uC77C\uAC00\uAC00
-    \uC0B4\uD574\uB2F9\uD558\uB294 \uC544\uC8FC \uB054\uCC0D\uD55C \uC0AC\uAC74\uC774
-    \uBC1C\uC0DD\uD588\uB2E4\u2026 "
-  - "\uC774\uB97C \uC870\uC0AC\uD558\uAE30 \uC704\uD574 \uB098\uC640 \uAC19\uC740
-    \uD0D0\uC815\uC774\uC790 \uB098\uC758 \uAC00\uC7A5 \uCE5C\uD55C \uCE5C\uAD6C\uC778
-    \uCE74\uC77C\uC774 \uC774 \uC800\uD0DD\uC73C\uB85C \uB5A0\uB0AC\uC9C0\uB9CC \uBC8C\uC368
-    3\uC77C\uC9F8 \uB3CC\uC544\uC624\uC9C0 \uC54A\uC558\uB2E4. "
-  - "\uB098\uB294 \uB0B4 \uCE5C\uAD6C\uB97C \uCC3E\uC73C\uB7EC, \uADF8\uB9AC\uACE0
-    \uC774 \uC0AC\uAC74\uC758 \uBC94\uC778\uACFC \uC9C4\uC0C1\uC744 \uC54C\uC544\uB0B4\uB7EC
-    \uC774 \uC800\uD0DD\uC5D0 \uBC1C\uC744 \uB4E4\uC600\uB2E4. "
+  - 'The Terrible Event Of the Day... Who was the Criminal? '
+  - 'The culprit of the murder of a mansion family on November 27, 1987 was caught. '
+  - The culprit was a butler, Tom.
+  - He had a crush on Lucy, the daughter of his master Robert and his wife Helen,
+    and acted obsessively towards her.
+  - Rejected by Lucy and received an order to cease all contact with her by Robert,
+    Tom ruined Robert's business and then killed him and his wife.
+  - And after Tom pin the crime on Damien, Robert's bastard child, he also killed
+    Demian.
+  - Lucy was shocked by this fact and ran away from Tom, fell out of the window and
+    committed suicide.
+  - After this incident, Tom was living in secret in the basement of the mansion,
+    and even killed a detective who visited the mansion to investigate the case.
+  - 'Fortunately, detective Kyle noticed Tom''s plans and discovered the crime, ending
+    his long-standing crime. '
+  - According to Kyle's investigation, Tom has usually been well-received by household
+    staffs.
   CharPerSeconds: 15
 --- !u!114 &2016798720
 MonoBehaviour:
@@ -1301,8 +1321,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 30e65a61e0e6e4271b562d6b247dc857, type: 2}
-  m_sharedMaterial: {fileID: -7197895360192500977, guid: 30e65a61e0e6e4271b562d6b247dc857, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 52cb95421939b3343ade2a7579e71c06, type: 2}
+  m_sharedMaterial: {fileID: 21307179227807236, guid: 52cb95421939b3343ade2a7579e71c06, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1412,7 +1432,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -116, y: 0}
+  m_AnchoredPosition: {x: -155, y: 0}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2070264060
@@ -1429,8 +1449,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 2070264061}
   _dialog:
-  - "\uBA87 \uC77C \uD6C4....."
-  CharPerSeconds: 5
+  - HIDE TIMES, November 13, 1987
+  CharPerSeconds: 8
 --- !u!114 &2070264061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1453,8 +1473,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 30e65a61e0e6e4271b562d6b247dc857, type: 2}
-  m_sharedMaterial: {fileID: -7197895360192500977, guid: 30e65a61e0e6e4271b562d6b247dc857, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d452d52c272ff8442a3fce75bd39af55, type: 2}
+  m_sharedMaterial: {fileID: 21513131424051102, guid: d452d52c272ff8442a3fce75bd39af55, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1514,7 +1534,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -130.52002, w: 0}
+  m_margin: {x: 0, y: 0, z: -176.6797, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
