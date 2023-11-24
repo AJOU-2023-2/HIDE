@@ -1,4 +1,6 @@
 ﻿using UnityEngine;
+using static System.Net.Mime.MediaTypeNames;
+
 
 namespace Michsky.UI.Dark
 {
@@ -6,8 +8,15 @@ namespace Michsky.UI.Dark
     {
         public void ExitGame()
         {
-            Debug.Log("Exit method is working in builds.");
-            Application.Quit();
+
+            #if UNITY_EDITOR
+                    UnityEditor.EditorApplication.isPlaying = false;
+            #else
+                        Application.Quit();
+            #endif
+
+
         }
     }
+
 }
