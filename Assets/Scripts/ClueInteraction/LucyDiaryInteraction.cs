@@ -91,6 +91,7 @@ public class LucyDiaryInteraction : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
+            DialogPanel.SetActive(false);
             LucyDiary.SetActive(false);
             NextBtn.SetActive(false);
             PreviousBtn.SetActive(false);

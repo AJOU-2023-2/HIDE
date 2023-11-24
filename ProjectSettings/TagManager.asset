@@ -16,6 +16,20 @@ TagManager:
   - EntKey
   - Knife
   - Diary
+  - Block
+  - Area
+  - Num1
+  - TomMemo
+  - meMemo
+  - kMemo
+  - oMemo
+  - kNote
+  - kNote1
+  - hDiary1
+  - hDiary2
+  - mMemo
+  - oMemo2
+  - Num2
   layers:
   - Default
   - TransparentFX

@@ -91,6 +91,7 @@ public class DemianDiaryInteraction : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
+            DialogPanel.SetActive(false);
             DemianDiary.SetActive(false);
             NextBtn.SetActive(false);
             PreviousBtn.SetActive(false);

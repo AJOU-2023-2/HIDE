@@ -8,12 +8,9 @@ public class SettingUI : MonoBehaviour
 {
     public GameObject OptionBtn;
     public GameObject CloseOptionBtn;
-    public GameObject CloseMenualBtn;
 
     public GameObject WarningPanel;
     public GameObject OptionPanel;
-    public GameObject MenunalPanel;
-
 
     public void SettingBtn()
     {
@@ -56,10 +53,5 @@ public class SettingUI : MonoBehaviour
     public void ExitOptionBtn()
     {
         OptionPanel.SetActive(false);
-    }
-
-    public void ExitMenualBtn()
-    {
-        MenunalPanel.SetActive(false);
     }
 }
