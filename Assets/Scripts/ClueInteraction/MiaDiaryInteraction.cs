@@ -91,6 +91,7 @@ public class MiaDiaryInteraction : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
+            DialogPanel.SetActive(false);
             MiaDiary.SetActive(false);
             NextBtn.SetActive(false);
             PreviousBtn.SetActive(false);

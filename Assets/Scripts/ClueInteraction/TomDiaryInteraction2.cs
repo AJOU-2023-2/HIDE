@@ -91,6 +91,7 @@ public class TomDiaryInteraction2 : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
+            DialogPanel.SetActive(false);
             TomDiary.SetActive(false);
             NextBtn.SetActive(false);
             PreviousBtn.SetActive(false);

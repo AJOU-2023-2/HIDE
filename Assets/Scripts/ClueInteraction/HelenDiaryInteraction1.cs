@@ -92,6 +92,7 @@ public class HelenDiaryInteraction1 : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
+            DialogPanel.SetActive(false);
             HelenDiary.SetActive(false);
             NextBtn.SetActive(false);
             PreviousBtn.SetActive(false);
