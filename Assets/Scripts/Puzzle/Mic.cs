@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.UI;
+using static System.Net.Mime.MediaTypeNames;
 
 public class Mic : MonoBehaviour
 {
@@ -91,9 +93,15 @@ public class Mic : MonoBehaviour
                 resultValue = 0;
             
             if(resultValue > 70)
-                Debug.Log("GameOver");
-            
-            if(myLightScript != null)
+            {
+                #if UNITY_EDITOR
+                                    UnityEditor.EditorApplication.isPlaying = false;
+                #else
+                                Application.Quit();
+                #endif
+            }
+
+            if (myLightScript != null)
             {
                 if(resultValue > 60)
                 {
