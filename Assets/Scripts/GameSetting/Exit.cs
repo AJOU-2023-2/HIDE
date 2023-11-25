@@ -55,14 +55,16 @@ public class Exit : MonoBehaviour
         yield return new WaitForSeconds(1f);
         characterName.SetActive(true);
         yield return new WaitForSeconds(1f);
-        characterText.SetActive(true);
         characterText.GetComponent<TypingEffect>()._dialog[0] = "Why is the mansion’s door locked? I’m sure it was not locked before…";
+        characterText.GetComponent<TMP_Text>().text = characterText.GetComponent<TypingEffect>()._dialog[0];
+        characterText.SetActive(true);
         lucyKey.SetActive(true);
     }
 
     public void YesBtn()
     {
-        SceneManager.LoadScene("Ending");
+        
+        //SceneManager.LoadScene("Ending");
     }
 
     public void NoBtn()
