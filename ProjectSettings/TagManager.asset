@@ -30,6 +30,10 @@ TagManager:
   - mMemo
   - oMemo2
   - Num2
+  - HelenDiary
+  - MiaDiary
+  - Monologue
+  - Monologue2
   layers:
   - Default
   - TransparentFX
