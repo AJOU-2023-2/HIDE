@@ -24,6 +24,9 @@ public class TypingEffect : MonoBehaviour
     public GameObject characterImage;
     public GameObject player;
 
+    public GameObject player2;
+    public GameObject tom;
+
 
     // Start is called before the first frame update
     void Start()
@@ -47,11 +50,27 @@ public class TypingEffect : MonoBehaviour
                 SceneManager.LoadScene("MainGame");
             if (SceneManager.GetActiveScene().buildIndex == 3)
             {
-                textpanel.SetActive(false);
-                characterText.SetActive(false);
-                characterName.SetActive(false);
-                characterImage.SetActive(false);
-                player.SetActive(true);
+                if(this.gameObject.tag == "Monologue")
+                {
+                    tom.GetComponent<TomAnim>().incheck = false;
+                    tom.GetComponent<TomAnim>().tomAnim.SetBool("walk2", true);
+                    textpanel.SetActive(false);
+                    characterName.SetActive(false);
+                    characterText.SetActive(false);
+                }else if(this.gameObject.tag == "Monologue2")
+                {
+                    textpanel.SetActive(false);
+                    characterText.SetActive(false);
+                    characterName.SetActive(false);
+                    player2.SetActive(false);
+                    player.SetActive(true);
+                }else{
+                    textpanel.SetActive(false);
+                    characterText.SetActive(false);
+                    characterName.SetActive(false);
+                    characterImage.SetActive(false);
+                    player.SetActive(true);
+                }
                 //player.GetComponent<Move>().enabled = true;
             }
         }
