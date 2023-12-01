@@ -45,6 +45,8 @@ public class DemianDiaryInteraction : MonoBehaviour
     public GameObject characterText;
     public GameObject characterName;
     public GameObject characterImage;
+    public GameObject mapChange;
+    public GameObject mapChangePanel;
     bool read = false;
     bool readAgain = true; //다시 뜨는 거 막기 위해 사용
     public GameObject minigame;
@@ -130,6 +132,8 @@ public class DemianDiaryInteraction : MonoBehaviour
         characterText.GetComponent<TMP_Text>().text = characterText.GetComponent<TypingEffect>()._dialog[0];
         characterText.SetActive(true);
         minigame.SetActive(true);
+        mapChange.SetActive(false);
+        mapChangePanel.SetActive(true);
     }
 
     public void ShowDemian()

@@ -25,6 +25,7 @@ public class TypingEffect : MonoBehaviour
     public GameObject player;
 
     public GameObject player2;
+    public GameObject player3;
     public GameObject tom;
 
 
@@ -63,7 +64,10 @@ public class TypingEffect : MonoBehaviour
                     characterText.SetActive(false);
                     characterName.SetActive(false);
                     player2.SetActive(false);
-                    player.SetActive(true);
+                    player3.SetActive(true);
+                }else if(this.gameObject.tag == "PhaseChange")
+                {
+                    SceneManager.LoadScene("MainGame_pg2");
                 }else{
                     textpanel.SetActive(false);
                     characterText.SetActive(false);

@@ -13,13 +13,16 @@ EditorBuildSettings:
     guid: 038ceeb1741f14d2bae2d698855c8522
   - enabled: 1
     path: Assets/Scenes/Intro.unity
-    guid: 1fb94e5a21ca0491b874c70beab1242a
+    guid: a109b4e8b8a28aa41b009d8795b3e32a
   - enabled: 1
     path: Assets/Scenes/MainIntro.unity
-    guid: 952de98a35b1146a980313c5b8ebd27d
+    guid: cae423eedb1488e46be841f5ca3fdc1b
   - enabled: 1
     path: Assets/Scenes/MainGame.unity
-    guid: c3eada274a278471bbdf01cfbf176521
+    guid: 87e81948527b241d1bc75706bbfd4ba5
+  - enabled: 1
+    path: Assets/Scenes/MainGame_pg2.unity
+    guid: 8212990de30235e4584e8ffda7aedd83
   - enabled: 1
     path: Assets/Scenes/Ending.unity
     guid: b46cd72aa1c37479d8fc08c7e0de503e

@@ -20,6 +20,12 @@ public class DragMiniGame : MonoBehaviour
     public GameObject player;
     public ModalWindowManager myModalWindow;
     public GameObject ui;
+    public GameObject background;
+    
+    //맵 이동 관련 오브젝트
+    public GameObject change;
+    public GameObject noChange;
+
 
     //독백패널 오브젝트
     public GameObject textpanel;
@@ -130,7 +136,7 @@ public class DragMiniGame : MonoBehaviour
 
     IEnumerator ShowPanel()
     {
-        exit.GetComponent<Exit>().exitcheck = 2;
+        background.SetActive(false);
         //player.GetComponent<Move>().enabled = false;
         textpanel.SetActive(true);
         yield return new WaitForSeconds(1f);
@@ -141,6 +147,9 @@ public class DragMiniGame : MonoBehaviour
         characterText.GetComponent<TypingEffect>()._dialog[0] = "I must get out of this mansion quickly.";
         characterText.GetComponent<TMP_Text>().text = characterText.GetComponent<TypingEffect>()._dialog[0];
         characterText.SetActive(true);
+        ui.SetActive(true);
+        change.SetActive(true);
+        noChange.SetActive(false);
         game.SetActive(false);
     }
 }

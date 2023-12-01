@@ -13,6 +13,8 @@ public class Item : MonoBehaviour
 
     private float distance;
 
+    public GameObject exit;
+
     void Update()
     {
         distance = Vector2.Distance(playerobj.transform.position, transform.position);
@@ -70,6 +72,7 @@ public class Item : MonoBehaviour
         {
             if (myInstance != null) Destroy(myInstance);
             Destroy(this.gameObject);
+            exit.GetComponent<Exit>().exitcheck = 2;
             playerEffect.SetActive(false);
             uIBtn.Item4.SetActive(true); //Show EntKey Icon
         }

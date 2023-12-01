@@ -20,6 +20,7 @@ public class Exit : MonoBehaviour
     public GameObject characterImage;
     public GameObject player;
     public GameObject lucyKey;
+    public GameObject anim;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -63,7 +64,9 @@ public class Exit : MonoBehaviour
 
     public void YesBtn()
     {
-        
+        panel.SetActive(false);
+        anim.SetActive(true);
+        exitcheck = 3;
         //SceneManager.LoadScene("Ending");
     }
 

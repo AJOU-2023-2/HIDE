@@ -7,10 +7,10 @@ public class TomAnim : MonoBehaviour
 {
     private Rigidbody2D tomRb;
     public Animator tomAnim;
-    public bool incheck;
-    private bool check;
-    private bool check2;
-    private bool check3;
+    public bool incheck;    //애니메이션 전환 체크
+    private bool check;     //톰이 걸어오는 애니메이션 체크
+    private bool check2;    //톰이 퇴장하는 애니메이션 체크
+    private bool check3;    //톰 독백 체크
     
     private Vector3 tompos;
 
@@ -70,6 +70,7 @@ public class TomAnim : MonoBehaviour
         }
     }
 
+    //톰이 플레이어에게 걸어오는 장면
     void Walk()
     {
         transform.position = Vector2.MoveTowards(transform.position, new Vector3(targetPos.transform.position.x , targetPos.transform.position.y + 1, targetPos.transform.position.z), 10 * Time.deltaTime);
@@ -77,6 +78,7 @@ public class TomAnim : MonoBehaviour
             check = false;
     }
 
+    //톰이 퇴장하는 장면
     void Walk2()
     {
         transform.position = Vector2.MoveTowards(transform.position, tompos, 10 * Time.deltaTime);
