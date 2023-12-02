@@ -27,6 +27,7 @@ public class TypingEffect : MonoBehaviour
     public GameObject player2;
     public GameObject player3;
     public GameObject tom;
+    public GameObject phase2;
 
 
     // Start is called before the first frame update
@@ -76,6 +77,18 @@ public class TypingEffect : MonoBehaviour
                     player.SetActive(true);
                 }
                 //player.GetComponent<Move>().enabled = true;
+            }
+            if (SceneManager.GetActiveScene().buildIndex == 4)
+            {
+                textpanel.SetActive(false);
+                characterText.SetActive(false);
+                if(characterName != null)
+                    characterName.SetActive(false);
+                if(characterImage != null)
+                    characterImage.SetActive(false);
+                player.SetActive(true);
+                if(phase2 != null)
+                    phase2.SetActive(true);
             }
         }
     }
