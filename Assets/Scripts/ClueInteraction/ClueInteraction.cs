@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ClueInteraction : MonoBehaviour
 {
@@ -31,6 +32,8 @@ public class ClueInteraction : MonoBehaviour
     [SerializeField]
     Button closeButton;
     public GameObject Closebtn;
+
+    public GameObject key;
 
     void Start()
     {
@@ -169,7 +172,13 @@ public class ClueInteraction : MonoBehaviour
         if (collision.tag == "Player" && this.gameObject.tag == "kNote")
         {
             kNote.SetActive(false);
-            StartCoroutine(ShowPanel());
+
+            //페이즈1에서는 독백 뜨게, 페이즈2에서는 그냥 루시 키 활성화
+            if (SceneManager.GetActiveScene().buildIndex == 3)
+                StartCoroutine(ShowPanel());
+            else
+                key.SetActive(true);
+
         }
         if (collision.tag == "Player" && this.gameObject.tag == "kNote1")
         {
@@ -202,7 +211,6 @@ public class ClueInteraction : MonoBehaviour
     IEnumerator ShowPanel()
     {
         exit.GetComponent<Exit>().exitcheck = 1;
-        //player.GetComponent<Move>().enabled = false;
         textpanel.SetActive(true);
         yield return new WaitForSeconds(1f);
         characterImage.SetActive(true);

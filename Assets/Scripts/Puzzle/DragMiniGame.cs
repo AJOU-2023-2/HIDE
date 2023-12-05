@@ -26,6 +26,7 @@ public class DragMiniGame : MonoBehaviour
     public GameObject clue2;
     public GameObject clue3;
     public GameObject clue4;
+    public GameObject diary;
 
     //맵 이동 관련 오브젝트
     public GameObject change;
@@ -161,6 +162,6 @@ public class DragMiniGame : MonoBehaviour
         clue2.SetActive(true);
         clue3.SetActive(true);
         clue4.SetActive(true);
-
+        diary.SetActive(true);
     }
 }

@@ -22,6 +22,8 @@ public class Exit : MonoBehaviour
     public GameObject lucyKey;
     public GameObject anim;
 
+    public bool check;  //톰 방에서 증거 모두 수집시 On
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.tag == "Player")
@@ -31,9 +33,14 @@ public class Exit : MonoBehaviour
             if(exitcheck == 1) tmp.text = "The door is locked.";
             if(exitcheck == 2)
             {
-                tmp.text = "Would you like to use the item?";
-                YesButton.SetActive(true);
-                NoButton.SetActive(true);
+                if(!check)
+                {
+                    tmp.text = "I'm not going out until I get evidence of this crime";
+                }else {
+                    tmp.text = "Would you like to use the item?";
+                    YesButton.SetActive(true);
+                    NoButton.SetActive(true);
+                }
             }
         }
     }
@@ -66,8 +73,11 @@ public class Exit : MonoBehaviour
     {
         panel.SetActive(false);
         anim.SetActive(true);
-        exitcheck = 3;
-        //SceneManager.LoadScene("Ending");
+    }
+
+    public void YesBtn2()
+    {
+        SceneManager.LoadScene("Ending");
     }
 
     public void NoBtn()

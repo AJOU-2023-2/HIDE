@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class LucyDiaryInteraction : MonoBehaviour
 {
@@ -120,7 +121,8 @@ public class LucyDiaryInteraction : MonoBehaviour
             {
                 this.GetComponent<AudioSource>().Play();
                 puzzle.SetActive(true);
-                StartCoroutine(ShowPuzzlePanel());
+                if (SceneManager.GetActiveScene().buildIndex == 3)
+                    StartCoroutine(ShowPuzzlePanel());
                 readAgain = false;
             }
         }
