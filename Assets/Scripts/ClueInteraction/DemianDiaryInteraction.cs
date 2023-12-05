@@ -20,6 +20,8 @@ public class DemianDiaryInteraction : MonoBehaviour
     [SerializeField]
     Button previousButton;
     [SerializeField]
+    Button closeButton;
+    [SerializeField]
     Image bookImage;
     [SerializeField]
     Sprite bookTexture;
@@ -35,6 +37,7 @@ public class DemianDiaryInteraction : MonoBehaviour
 
     public GameObject NextBtn;
     public GameObject PreviousBtn;
+    public GameObject Closebtn;
 
     bool Demian = false;
 
@@ -57,9 +60,11 @@ public class DemianDiaryInteraction : MonoBehaviour
 
         nextButton.onClick.AddListener(NextPage);
         previousButton.onClick.AddListener(PreviousPage);
+        closeButton.onClick.AddListener(Close);
 
         NextBtn.SetActive(false);
         PreviousBtn.SetActive(false);
+        Closebtn.SetActive(false);
     }
 
     void NextPage()
@@ -74,6 +79,14 @@ public class DemianDiaryInteraction : MonoBehaviour
         bookController.PreviousPage();
         currentPage = Mathf.Max(--currentPage, 0);
         StartCoroutine(UpdatePageDelayed());
+    }
+
+    void Close()
+    {
+        DemianDiary.SetActive(false);
+        NextBtn.SetActive(false);
+        PreviousBtn.SetActive(false);
+        Closebtn.SetActive(false);
     }
 
     IEnumerator UpdatePageDelayed()
@@ -108,6 +121,7 @@ public class DemianDiaryInteraction : MonoBehaviour
             DemianDiary.SetActive(false);
             NextBtn.SetActive(false);
             PreviousBtn.SetActive(false);
+            Closebtn.SetActive(false);
             Demian = false;
 
             if(read && readAgain)
@@ -150,6 +164,7 @@ public class DemianDiaryInteraction : MonoBehaviour
             UpdatePage();
             DemianDiary.SetActive(true);
             NextBtn.SetActive(true);
+            Closebtn.SetActive(true);
             DialogPanel.SetActive(false);
             read = true;
         }

@@ -28,6 +28,68 @@ public class ClueInteraction : MonoBehaviour
     public GameObject player;
     public GameObject exit;
 
+    [SerializeField]
+    Button closeButton;
+    public GameObject Closebtn;
+
+    void Start()
+    {
+        closeButton.onClick.AddListener(Close);
+    }
+
+    void Close()
+    {
+        if(this.gameObject.tag == "Num1")
+        {
+            Num1.gameObject.SetActive(false);
+        }
+        if (this.gameObject.tag == "TomMemo")
+        {
+            TomMemo.gameObject.SetActive(false);
+        }
+        if (this.gameObject.tag == "meMemo")
+        {
+            meMemo.gameObject.SetActive(false);
+        }
+        if (this.gameObject.tag == "kMemo")
+        {
+            kMemo.gameObject.SetActive(false);
+        }
+        if (this.gameObject.tag == "oMemo")
+        {
+            oMemo.gameObject.SetActive(false);
+        }
+        if (this.gameObject.tag == "kNote")
+        {
+            kNote.gameObject.SetActive(false);
+        }
+        if (this.gameObject.tag == "kNote1")
+        {
+            kNote1.gameObject.SetActive(false);
+        }
+        if (this.gameObject.tag == "hDiary1")
+        {
+            hDiary1.gameObject.SetActive(false);
+        }
+        if (this.gameObject.tag == "hDiary2")
+        {
+            hDiary2.gameObject.SetActive(false);
+        }
+        if (this.gameObject.tag == "mMemo")
+        {
+            mMemo.gameObject.SetActive(false);
+        }
+        if (this.gameObject.tag == "oMemo2")
+        {
+            oMemo2.gameObject.SetActive(false);
+        }
+        if (this.gameObject.tag == "Num2")
+        {
+            Num2.gameObject.SetActive(false);
+        }
+        Closebtn.SetActive(false);
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player" && this.gameObject.tag == "Num1")
@@ -57,6 +119,7 @@ public class ClueInteraction : MonoBehaviour
         if (collision.tag == "Player" && this.gameObject.tag == "kNote1")
         {
             kNote1.SetActive(true);
+            Closebtn.SetActive(true);
         }
         if (collision.tag == "Player" && this.gameObject.tag == "hDiary1")
         {
@@ -78,6 +141,7 @@ public class ClueInteraction : MonoBehaviour
         {
             Num2.SetActive(true);
         }
+        Closebtn.SetActive(true);
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -110,6 +174,7 @@ public class ClueInteraction : MonoBehaviour
         if (collision.tag == "Player" && this.gameObject.tag == "kNote1")
         {
             kNote1.SetActive(false);
+            Closebtn.SetActive(false);
         }
         if (collision.tag == "Player" && this.gameObject.tag == "hDiary1")
         {
@@ -131,6 +196,7 @@ public class ClueInteraction : MonoBehaviour
         {
             Num2.SetActive(false);
         }
+        Closebtn.SetActive(false);
     }
 
     IEnumerator ShowPanel()

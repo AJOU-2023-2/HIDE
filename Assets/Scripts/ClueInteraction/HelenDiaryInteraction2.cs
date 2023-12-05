@@ -20,6 +20,8 @@ public class HelenDiaryInteraction2 : MonoBehaviour
     [SerializeField]
     Button previousButton;
     [SerializeField]
+    Button closeButton;
+    [SerializeField]
     Image bookImage;
     [SerializeField]
     Sprite bookTexture;
@@ -35,6 +37,7 @@ public class HelenDiaryInteraction2 : MonoBehaviour
 
     public GameObject NextBtn;
     public GameObject PreviousBtn;
+    public GameObject Closebtn;
 
     bool Helen = false;
 
@@ -44,9 +47,11 @@ public class HelenDiaryInteraction2 : MonoBehaviour
 
         nextButton.onClick.AddListener(NextPage);
         previousButton.onClick.AddListener(PreviousPage);
+        closeButton.onClick.AddListener(Close);
 
         NextBtn.SetActive(false);
         PreviousBtn.SetActive(false);
+        Closebtn.SetActive(false);
     }
 
     void NextPage()
@@ -61,6 +66,14 @@ public class HelenDiaryInteraction2 : MonoBehaviour
         bookController.PreviousPage();
         currentPage = Mathf.Max(--currentPage, 0);
         StartCoroutine(UpdatePageDelayed());
+    }
+
+    void Close()
+    {
+        HelenDiary.SetActive(false);
+        NextBtn.SetActive(false);
+        PreviousBtn.SetActive(false);
+        Closebtn.SetActive(false);
     }
 
     IEnumerator UpdatePageDelayed()
@@ -95,6 +108,7 @@ public class HelenDiaryInteraction2 : MonoBehaviour
             HelenDiary.SetActive(false);
             NextBtn.SetActive(false);
             PreviousBtn.SetActive(false);
+            Closebtn.SetActive(false);
             Helen = false;
         }
     }
@@ -113,6 +127,7 @@ public class HelenDiaryInteraction2 : MonoBehaviour
             UpdatePage();
             HelenDiary.SetActive(true);
             NextBtn.SetActive(true);
+            Closebtn.SetActive(true);
             DialogPanel.SetActive(false);
         }
     }

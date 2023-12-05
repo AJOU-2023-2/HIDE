@@ -72,6 +72,9 @@ public class HelenDiaryInteraction1 : MonoBehaviour
     void Close()
     {
         HelenDiary.SetActive(false);
+        NextBtn.SetActive(false);
+        PreviousBtn.SetActive(false);
+        Closebtn.SetActive(false);
     }
 
     IEnumerator UpdatePageDelayed()
@@ -125,6 +128,7 @@ public class HelenDiaryInteraction1 : MonoBehaviour
             UpdatePage();
             HelenDiary.SetActive(true);
             NextBtn.SetActive(true);
+            Closebtn.SetActive(true);
             DialogPanel.SetActive(false);
         }
     }

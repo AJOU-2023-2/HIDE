@@ -20,6 +20,8 @@ public class LucyDiaryInteraction : MonoBehaviour
     [SerializeField]
     Button previousButton;
     [SerializeField]
+    Button closeButton;
+    [SerializeField]
     Image bookImage;
     [SerializeField]
     Sprite bookTexture;
@@ -35,6 +37,7 @@ public class LucyDiaryInteraction : MonoBehaviour
 
     public GameObject NextBtn;
     public GameObject PreviousBtn;
+    public GameObject Closebtn;
 
     bool Lucy = false;
 
@@ -49,9 +52,11 @@ public class LucyDiaryInteraction : MonoBehaviour
 
         nextButton.onClick.AddListener(NextPage);
         previousButton.onClick.AddListener(PreviousPage);
+        closeButton.onClick.AddListener(Close);
 
         NextBtn.SetActive(false);
         PreviousBtn.SetActive(false);
+        Closebtn.SetActive(false);
     }
 
     void NextPage()
@@ -66,6 +71,14 @@ public class LucyDiaryInteraction : MonoBehaviour
         bookController.PreviousPage();
         currentPage = Mathf.Max(--currentPage, 0);
         StartCoroutine(UpdatePageDelayed());
+    }
+
+    void Close()
+    {
+        LucyDiary.SetActive(false);
+        NextBtn.SetActive(false);
+        PreviousBtn.SetActive(false);
+        Closebtn.SetActive(false);
     }
 
     IEnumerator UpdatePageDelayed()
@@ -100,6 +113,7 @@ public class LucyDiaryInteraction : MonoBehaviour
             LucyDiary.SetActive(false);
             NextBtn.SetActive(false);
             PreviousBtn.SetActive(false);
+            Closebtn.SetActive(false);
             Lucy = false;
 
             if(read && readAgain)
@@ -133,6 +147,7 @@ public class LucyDiaryInteraction : MonoBehaviour
             UpdatePage();
             LucyDiary.SetActive(true);
             NextBtn.SetActive(true);
+            Closebtn.SetActive(true);
             DialogPanel.SetActive(false);
             read = true;
         }
