@@ -38,6 +38,7 @@ public class HelenDiaryInteraction1 : MonoBehaviour
 
     public GameObject NextBtn;
     public GameObject PreviousBtn;
+    public GameObject Closebtn;
 
     bool Helen = false;
 
@@ -51,6 +52,7 @@ public class HelenDiaryInteraction1 : MonoBehaviour
 
         NextBtn.SetActive(false);
         PreviousBtn.SetActive(false);
+        Closebtn.SetActive(false);
     }
 
     void NextPage()
@@ -104,6 +106,7 @@ public class HelenDiaryInteraction1 : MonoBehaviour
             HelenDiary.SetActive(false);
             NextBtn.SetActive(false);
             PreviousBtn.SetActive(false);
+            Closebtn.SetActive(false);
             Helen = false;
         }
     }
