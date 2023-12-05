@@ -21,6 +21,8 @@ public class HelenDiaryInteraction1 : MonoBehaviour
     [SerializeField]
     Button previousButton;
     [SerializeField]
+    Button closeButton;
+    [SerializeField]
     Image bookImage;
     [SerializeField]
     Sprite bookTexture;
@@ -45,6 +47,7 @@ public class HelenDiaryInteraction1 : MonoBehaviour
 
         nextButton.onClick.AddListener(NextPage);
         previousButton.onClick.AddListener(PreviousPage);
+        closeButton.onClick.AddListener(Close);
 
         NextBtn.SetActive(false);
         PreviousBtn.SetActive(false);
@@ -62,6 +65,11 @@ public class HelenDiaryInteraction1 : MonoBehaviour
         bookController.PreviousPage();
         currentPage = Mathf.Max(--currentPage, 0);
         StartCoroutine(UpdatePageDelayed());
+    }
+
+    void Close()
+    {
+        HelenDiary.SetActive(false);
     }
 
     IEnumerator UpdatePageDelayed()
