@@ -21,7 +21,12 @@ public class DragMiniGame : MonoBehaviour
     public ModalWindowManager myModalWindow;
     public GameObject ui;
     public GameObject background;
-    
+
+    public GameObject clue1;
+    public GameObject clue2;
+    public GameObject clue3;
+    public GameObject clue4;
+
     //맵 이동 관련 오브젝트
     public GameObject change;
     public GameObject noChange;
@@ -151,5 +156,11 @@ public class DragMiniGame : MonoBehaviour
         change.SetActive(true);
         noChange.SetActive(false);
         game.SetActive(false);
+
+        clue1.SetActive(true);
+        clue2.SetActive(true);
+        clue3.SetActive(true);
+        clue4.SetActive(true);
+
     }
 }

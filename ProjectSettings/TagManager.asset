@@ -35,6 +35,7 @@ TagManager:
   - Monologue
   - Monologue2
   - PhaseChange
+  - hDiary__2
   layers:
   - Default
   - TransparentFX
