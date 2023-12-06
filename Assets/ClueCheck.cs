@@ -17,7 +17,7 @@ public class ClueCheck : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (count == 2 && a = true)
+        if (count == 2 && a == true)
         {
             Timer.SetActive(true);
             obj.GetComponent<Exit>().check = true;
