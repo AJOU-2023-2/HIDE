@@ -22,8 +22,12 @@ public class Exit : MonoBehaviour
     public GameObject lucyKey;
     public GameObject anim;
 
+
+
+
     public bool check;  //톰 방에서 증거 모두 수집시 On
 
+ 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.tag == "Player")

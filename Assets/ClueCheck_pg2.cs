@@ -4,11 +4,9 @@ using UnityEngine;
 
 public class ClueCheck_pg2 : MonoBehaviour
 {
-    public GameObject clue1;
-    public GameObject clue2;
-    public GameObject clue3;
-    public GameObject clue4;
+
     public GameObject clue5;
+
 
     private int count = 0;
     
@@ -47,12 +45,14 @@ public class ClueCheck_pg2 : MonoBehaviour
                 count++;
 
             }
+
         }
 
         if(count == 5)
         {
             clue5.SetActive(true);
         }
+
 
     }
 }
