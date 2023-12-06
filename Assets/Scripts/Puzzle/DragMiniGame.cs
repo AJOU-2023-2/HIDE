@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using Michsky.UI.Dark; // namespace
+using UnityEngine.UI;
 
 public class DragMiniGame : MonoBehaviour
 {
     public int touchCount = 0;
+
+    private int touchCountCheck;
     public float timer = 5f;
     private bool gameClear = false;
     public bool timerCheck = false;
@@ -40,18 +43,24 @@ public class DragMiniGame : MonoBehaviour
     public GameObject characterImage;
     public GameObject exit;
 
+    public GameObject yesbtn;
+    public GameObject nobtn;
+
     void Start()
     {
         objs = GameObject.FindGameObjectsWithTag("Block");
         foreach(GameObject obj in objs)
             obj.GetComponent<Rigidbody2D>().velocity = new Vector2(0,0);
+        yesbtn.GetComponent<Button>().onClick.AddListener(StartCount);
+        nobtn.GetComponent<Button>().onClick.AddListener(ReStart);
     }
 
     void Update()
     {
+        touchCountCheck = touchCount;
         if(check)
         {
-            if (touchCount > 0 && timerCheck)
+            if (touchCountCheck > 3 && timerCheck)
             {
                 timer -= Time.deltaTime;
                 if (timer <= 0)
@@ -85,19 +94,21 @@ public class DragMiniGame : MonoBehaviour
     {
         foreach(GameObject obj in objs)
         {
+            obj.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
             obj.GetComponent<Rigidbody2D>().gravityScale = 1;
             obj.GetComponent<DragObj>().dragCheck = false;
         }
-
-        if(touchCount > 0)
+        Debug.Log(touchCountCheck);
+        if(touchCountCheck >= 3)
         {
+            Debug.Log("3");
             timer = 5f;
             startButton.SetActive(false);
             restartButton.SetActive(true);
             countText.SetActive(true);
             timerCheck = true;
         }
-        else {
+        else if(touchCountCheck < 3) {
             timer = 5f;
             startButton.SetActive(false);
             restartButton.SetActive(true);
@@ -116,8 +127,9 @@ public class DragMiniGame : MonoBehaviour
         foreach(GameObject obj in objs)
         {
             obj.GetComponent<DragObj>().MoveObj();
+            obj.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
             //obj.GetComponent<Rigidbody2D>().velocity = new Vector2(0,0);
-            obj.GetComponent<Rigidbody2D>().gravityScale = 0;
+            //obj.GetComponent<Rigidbody2D>().gravityScale = 0;
             obj.GetComponent<DragObj>().dragCheck = true;
         }
     }

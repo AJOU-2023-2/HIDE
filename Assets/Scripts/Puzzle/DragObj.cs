@@ -6,7 +6,8 @@ public class DragObj : MonoBehaviour
 {   
     private float distance = 3.0f;
     private Quaternion rot;
-    private Vector3 pos;
+
+    [SerializeField] private Vector3 pos;
     public bool dragCheck;
 
     void Start()
