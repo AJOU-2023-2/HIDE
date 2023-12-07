@@ -8,7 +8,7 @@ public class BGMController : MonoBehaviour
 {
     static public BGMController instance;
     public GameObject BGM;
-    public AudioSource audio;
+    private AudioSource audio;
 
 
     void Start()

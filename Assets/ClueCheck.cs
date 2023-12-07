@@ -5,10 +5,14 @@ using UnityEngine;
 public class ClueCheck : MonoBehaviour
 {
     public GameObject Timer;
+    public GameObject clue;
+
     private GameObject obj;
     private int count = 0;
+    private int count2 = 0;
 
     private bool a = true;
+    private bool b = true;
 
     void Start()
     {
@@ -23,6 +27,11 @@ public class ClueCheck : MonoBehaviour
             obj.GetComponent<Exit>().check = true;
             a = false;
         }
+        else if (count2 == 5 && b == true)
+        {
+            clue.SetActive(true);
+            b = false;
+        }
     }
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -34,6 +43,30 @@ public class ClueCheck : MonoBehaviour
         else if (collision.tag == "Diary")
         {
             count++;
+        }
+        else if (collision.tag == "hDiary1")
+        {
+            count2++;
+        }
+        else if (collision.tag == "hDiary2")
+        {
+            count2++;
+
+        }
+        else if (collision.tag == "mMemo")
+        {
+            count2++;
+
+        }
+        else if (collision.tag == "oMemo2")
+        {
+            count2++;
+
+        }
+        else if (collision.tag == "hDiary__2")
+        {
+            count2++;
+
         }
     }
 }
