@@ -16,7 +16,9 @@ public class CountTime : MonoBehaviour
     }
 
     void Update()
-    {
+    {   
+        //controlScript.test1 && controlScript.test2 && controlScript.test3
+        //controlScript.touchCount > 0
         if(controlScript.touchCount > 0 && controlScript.timerCheck && !clear)
         {
             this.GetComponent<TextMeshProUGUI>().text = "남은 시간 : " + Mathf.Round(controlScript.timer);

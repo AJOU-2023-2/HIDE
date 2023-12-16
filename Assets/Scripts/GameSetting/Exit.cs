@@ -37,7 +37,7 @@ public class Exit : MonoBehaviour
             if(exitcheck == 1) tmp.text = "The door is locked.";
             if(exitcheck == 2)
             {
-                if(!check)
+                if(!check && SceneManager.GetActiveScene().buildIndex == 4)
                 {
                     tmp.text = "I'm not going out until I get evidence of this crime";
                 }else {

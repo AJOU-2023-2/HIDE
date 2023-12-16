@@ -2,12 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 using Michsky.UI.Dark; // namespace
 using UnityEngine.UI;
 
 public class DragMiniGame : MonoBehaviour
 {
     public int touchCount = 0;
+    public bool test1;
+    public bool test2;
+    public bool test3;
 
     private int touchCountCheck;
     public float timer = 5f;
@@ -43,24 +47,19 @@ public class DragMiniGame : MonoBehaviour
     public GameObject characterImage;
     public GameObject exit;
 
-    public GameObject yesbtn;
-    public GameObject nobtn;
-
     void Start()
     {
         objs = GameObject.FindGameObjectsWithTag("Block");
         foreach(GameObject obj in objs)
             obj.GetComponent<Rigidbody2D>().velocity = new Vector2(0,0);
-        yesbtn.GetComponent<Button>().onClick.AddListener(StartCount);
-        nobtn.GetComponent<Button>().onClick.AddListener(ReStart);
     }
 
     void Update()
     {
-        touchCountCheck = touchCount;
         if(check)
         {
-            if (touchCountCheck > 3 && timerCheck)
+            //test1 && test2 && test3
+            if (touchCount >= 3 && timerCheck)
             {
                 timer -= Time.deltaTime;
                 if (timer <= 0)
@@ -79,6 +78,7 @@ public class DragMiniGame : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Block"))
             touchCount++;
+            //test1 = true;
     }
 
     void OnTriggerExit2D(Collider2D other)
@@ -98,8 +98,9 @@ public class DragMiniGame : MonoBehaviour
             obj.GetComponent<Rigidbody2D>().gravityScale = 1;
             obj.GetComponent<DragObj>().dragCheck = false;
         }
-        Debug.Log(touchCountCheck);
-        if(touchCountCheck >= 3)
+        Debug.Log(touchCount);
+        //test1 && test2 && test3
+        if(touchCount >= 3)
         {
             Debug.Log("3");
             timer = 5f;
@@ -108,7 +109,8 @@ public class DragMiniGame : MonoBehaviour
             countText.SetActive(true);
             timerCheck = true;
         }
-        else if(touchCountCheck < 3) {
+        //!test1 || !test2 || !test3
+        else if(touchCount < 3) {
             timer = 5f;
             startButton.SetActive(false);
             restartButton.SetActive(true);
@@ -170,10 +172,13 @@ public class DragMiniGame : MonoBehaviour
         noChange.SetActive(false);
         game.SetActive(false);
 
-        clue1.SetActive(true);
-        clue2.SetActive(true);
-        clue3.SetActive(true);
-        clue4.SetActive(true);
-        diary.SetActive(true);
+        if(SceneManager.GetActiveScene().buildIndex == 4)
+        {
+            clue1.SetActive(true);
+            clue2.SetActive(true);
+            clue3.SetActive(true);
+            clue4.SetActive(true);
+            diary.SetActive(true);
+        }
     }
 }

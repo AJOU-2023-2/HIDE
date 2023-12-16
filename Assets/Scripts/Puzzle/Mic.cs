@@ -15,6 +15,8 @@ public class Mic : MonoBehaviour
     public int resultValue;
     public int cutValue;
 
+    public Slider slider;
+
     public Button recordButton;
     private bool micCheck = false;
     private int index;
@@ -43,6 +45,7 @@ public class Mic : MonoBehaviour
 
         samples = new float[sampleRate];
         myLightScript = myLight.GetComponent<UnityEngine.Rendering.Universal.Light2D>();
+        slider.value = resultValue;
     }
 
     private void ChangeMicrophone(int index)
@@ -69,6 +72,9 @@ public class Mic : MonoBehaviour
                 return;
             }
 
+            if(slider.gameObject.activeSelf == false)
+                slider.gameObject.SetActive(true);
+
             aud.GetData(samples,0); //녹음 데이터를 실수형 배열로 가져오기 (-1f ~ 1f), 시작위치 -> 0으로 두기
             float sum = 0;
 
@@ -88,10 +94,13 @@ public class Mic : MonoBehaviour
             rmsValue = Mathf.Clamp(rmsValue, 0, 100);
             resultValue = Mathf.RoundToInt(rmsValue);
 
+            slider.value = resultValue;
+
             //오버되는 결과값 잘라주기
             if(resultValue < cutValue)
                 resultValue = 0;
             
+
             if(resultValue > 70)
             {
                 // #if UNITY_EDITOR
@@ -103,7 +112,7 @@ public class Mic : MonoBehaviour
 
             if (myLightScript != null)
             {
-                if(resultValue > 60)
+                if(resultValue > 40)
                 {
                     myLightScript.pointLightInnerRadius = Mathf.Clamp(myLightScript.pointLightInnerRadius + rangeIncrease, minRange, maxRangeInner);
                     myLightScript.pointLightOuterRadius = Mathf.Clamp(myLightScript.pointLightOuterRadius + rangeIncrease, minRange, maxRangeOuter);
