@@ -56,26 +56,26 @@ public class Mic : MonoBehaviour
     private void StartRecording()
     {
         index = PlayerPrefs.GetInt("user-mic-device-index");
-        
+
         aud = Microphone.Start(dropdown.options[index].text.ToString(), true, 1, sampleRate);
 
-        if(dropdown.options[index].text != null) micCheck = true;
+        if (dropdown.options[index].text != null) micCheck = true;
     }
 
     public void Update()
     {
-        if(micCheck)
+        if (micCheck)
         {
-            if(aud == null)
+            if (aud == null)
             {
                 micCheck = false;
                 return;
             }
 
-            if(slider.gameObject.activeSelf == false)
+            if (slider.gameObject.activeSelf == false)
                 slider.gameObject.SetActive(true);
 
-            aud.GetData(samples,0); //녹음 데이터를 실수형 배열로 가져오기 (-1f ~ 1f), 시작위치 -> 0으로 두기
+            aud.GetData(samples, 0); //녹음 데이터를 실수형 배열로 가져오기 (-1f ~ 1f), 시작위치 -> 0으로 두기
             float sum = 0;
 
             //데이터의 평균값 구하기
@@ -97,11 +97,11 @@ public class Mic : MonoBehaviour
             slider.value = resultValue;
 
             //오버되는 결과값 잘라주기
-            if(resultValue < cutValue)
+            if (resultValue < cutValue)
                 resultValue = 0;
-            
 
-            if(resultValue > 70)
+
+            if (resultValue > 70)
             {
                 // #if UNITY_EDITOR
                 //                     UnityEditor.EditorApplication.isPlaying = false;
@@ -112,7 +112,7 @@ public class Mic : MonoBehaviour
 
             if (myLightScript != null)
             {
-                if(resultValue > 40)
+                if (resultValue > 40)
                 {
                     myLightScript.pointLightInnerRadius = Mathf.Clamp(myLightScript.pointLightInnerRadius + rangeIncrease, minRange, maxRangeInner);
                     myLightScript.pointLightOuterRadius = Mathf.Clamp(myLightScript.pointLightOuterRadius + rangeIncrease, minRange, maxRangeOuter);

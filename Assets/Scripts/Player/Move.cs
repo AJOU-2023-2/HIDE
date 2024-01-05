@@ -13,6 +13,7 @@ public class Move : MonoBehaviour
     private MapTransition boundaryScript;
 
     public float playerSpeed;
+    public AudioSource audio;
 
     public Vector2 saveMaxPos;
     public Vector2 saveMinPos;
@@ -58,6 +59,7 @@ public class Move : MonoBehaviour
         if (collision.gameObject.tag == "PinLocker")
         {
             pinLocker.gameObject.SetActive(true);
+            audio.Play();
         }
     }
 
