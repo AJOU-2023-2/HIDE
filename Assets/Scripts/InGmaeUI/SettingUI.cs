@@ -54,4 +54,5 @@ public class SettingUI : MonoBehaviour
     {
         OptionPanel.SetActive(false);
     }
+
 }

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System;
+
 
 public class UIBtn : MonoBehaviour
 {
@@ -11,6 +13,7 @@ public class UIBtn : MonoBehaviour
     public GameObject Map; //Map Panel
     public GameObject MapBtn; //Map Button
     public GameObject PlayerObj;
+    public AudioSource Itemaudio;
 
     public bool CheckItem1 = false;
     public bool CheckItem2 = false;
@@ -44,6 +47,45 @@ public class UIBtn : MonoBehaviour
         if (CheckMap == true)
         {
             MapBtn.SetActive(true);
+        }
+
+        if (Inventory.activeSelf == false)
+        {
+            if (Input.GetButtonDown("Inventory"))
+            {
+                Inventory.SetActive(true);
+                Itemaudio.Play();
+            }
+        }
+        else
+        {
+            if (Input.GetButtonDown("Inventory"))
+            {
+                Inventory.SetActive(false);
+                Itemaudio.Play();
+
+            }
+        }
+
+        if (Memo.activeSelf == false)
+        {
+            if (Input.GetButtonDown("Memo"))
+            {
+                Memo.SetActive(true);
+                PlayerObj.SetActive(false);
+                Itemaudio.Play();
+
+            }
+        }
+        else
+        {
+            if (Input.GetButtonDown("Memo"))
+            {
+                Memo.SetActive(false);
+                PlayerObj.SetActive(true);
+                Itemaudio.Play();
+
+            }
         }
     }
 
@@ -201,4 +243,5 @@ public class UIBtn : MonoBehaviour
         Map1st.SetActive(false);
         Map2nd.SetActive(true); //Show only 2nd Floor Map
     }
+
 }
