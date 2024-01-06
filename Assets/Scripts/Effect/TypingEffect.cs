@@ -9,7 +9,7 @@ public class TypingEffect : MonoBehaviour
 {
     public TextMeshProUGUI text;
     public List<string> _dialog = new List<string>();
-    private int _dialogNum;
+    public int _dialogNum;
 
     public int CharPerSeconds;
     string targetmsg;
@@ -28,6 +28,15 @@ public class TypingEffect : MonoBehaviour
     public GameObject player3;
     public GameObject tom;
     public GameObject phase2;
+
+    public GameObject endingText;
+    public GameObject backgroundPanel;
+    public GameObject image;
+    public GameObject paperImage;
+    public GameObject textPanel;
+    public GameObject storybtn;
+    public GameObject credit;
+    public TextMeshProUGUI storytext;
 
 
     // Start is called before the first frame update
@@ -90,9 +99,29 @@ public class TypingEffect : MonoBehaviour
                 if(phase2 != null)
                     phase2.SetActive(true);
             }
+            if (SceneManager.GetActiveScene().buildIndex == 5 && _dialog.Count == 11)
+            {
+                backgroundPanel.SetActive(true);
+                image.SetActive(false);
+                paperImage.SetActive(false);
+                textPanel.SetActive(false);
+                StartCoroutine(CreditOn());
+                storybtn.SetActive(false);
+                storytext.text = "";
+            }
         }
     }
 
+    IEnumerator CreditOn()
+    {
+        yield return new WaitForSeconds(0.5f);
+        endingText.SetActive(true);
+        yield return new WaitForSeconds(5f);
+        endingText.SetActive(false);
+        credit.SetActive(true);
+        yield return new WaitForSeconds(20f);
+        SceneManager.LoadScene("Main Menu (Desktop)");
+    }
 
     public void Setmsg(string msg)
     {
