@@ -9,11 +9,7 @@ using UnityEngine.UI;
 public class DragMiniGame : MonoBehaviour
 {
     public int touchCount = 0;
-    public bool test1;
-    public bool test2;
-    public bool test3;
 
-    private int touchCountCheck;
     public float timer = 5f;
     private bool gameClear = false;
     public bool timerCheck = false;
@@ -58,7 +54,6 @@ public class DragMiniGame : MonoBehaviour
     {
         if(check)
         {
-            //test1 && test2 && test3
             if (touchCount >= 3 && timerCheck)
             {
                 timer -= Time.deltaTime;
@@ -78,7 +73,6 @@ public class DragMiniGame : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Block"))
             touchCount++;
-            //test1 = true;
     }
 
     void OnTriggerExit2D(Collider2D other)
@@ -94,12 +88,12 @@ public class DragMiniGame : MonoBehaviour
     {
         foreach(GameObject obj in objs)
         {
-            obj.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+            obj.GetComponent<Rigidbody2D>().freezeRotation = false;
+            //obj.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
             obj.GetComponent<Rigidbody2D>().gravityScale = 1;
             obj.GetComponent<DragObj>().dragCheck = false;
         }
         Debug.Log(touchCount);
-        //test1 && test2 && test3
         if(touchCount >= 3)
         {
             Debug.Log("3");
@@ -109,7 +103,6 @@ public class DragMiniGame : MonoBehaviour
             countText.SetActive(true);
             timerCheck = true;
         }
-        //!test1 || !test2 || !test3
         else if(touchCount < 3) {
             timer = 5f;
             startButton.SetActive(false);
@@ -129,9 +122,10 @@ public class DragMiniGame : MonoBehaviour
         foreach(GameObject obj in objs)
         {
             obj.GetComponent<DragObj>().MoveObj();
-            obj.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
-            //obj.GetComponent<Rigidbody2D>().velocity = new Vector2(0,0);
-            //obj.GetComponent<Rigidbody2D>().gravityScale = 0;
+            //obj.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
+            obj.GetComponent<Rigidbody2D>().velocity = new Vector2(0,0);
+            obj.GetComponent<Rigidbody2D>().freezeRotation = true;
+            obj.GetComponent<Rigidbody2D>().gravityScale = 0;
             obj.GetComponent<DragObj>().dragCheck = true;
         }
     }

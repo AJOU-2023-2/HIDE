@@ -14,16 +14,15 @@ public class MinigameCheck : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Block"))
-            script.touchCount++;
+        // if (other.gameObject.CompareTag("Block"))
+        //     script.OnTriggerEnter2D(other);
     }
 
     void OnTriggerExit2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Block"))
         {
-            script.touchCount--;
-            script.timer = 5f;
+            //script.OnTriggerExit2D(other);
         }
     }
 }
