@@ -15,9 +15,12 @@ public class Ending : MonoBehaviour
     public GameObject storyText;
     public GameObject paperImage;
 
+    BGMController bgm;
+
     void Awake()
     {
         StartCoroutine(StartText());
+        bgm.change = true;
     }
 
     IEnumerator StartText()

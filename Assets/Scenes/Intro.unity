@@ -248,7 +248,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 243864778437365490, guid: c4382341a39a10b46a6bc574f22f5974, type: 2}
-  m_audioClip: {fileID: 8300000, guid: cf234e68ef7fc0a4487ffa9388157edc, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -362,6 +362,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BGM: {fileID: 398128034}
+  BGMList:
+  - name: ending
+    audioClip: {fileID: 8300000, guid: 2ff23186c50a53944a35374fde40f59f, type: 3}
+  - name: main
+    audioClip: {fileID: 8300000, guid: cf234e68ef7fc0a4487ffa9388157edc, type: 3}
+  change: 1
 --- !u!1 &445988089
 GameObject:
   m_ObjectHideFlags: 0
@@ -1630,6 +1636,7 @@ MonoBehaviour:
   - To investigate this, my closest friend and fellow detective, Kyle, went to this
     mansion, but he hasn't returned for three days now.
   - I came to this mansion to find my friend and uncover the truth behind this case.
+  _dialogNum: 0
   CharPerSeconds: 15
   textpanel: {fileID: 0}
   characterText: {fileID: 0}
@@ -1640,6 +1647,14 @@ MonoBehaviour:
   player3: {fileID: 0}
   tom: {fileID: 0}
   phase2: {fileID: 0}
+  endingText: {fileID: 0}
+  backgroundPanel: {fileID: 0}
+  image: {fileID: 0}
+  paperImage: {fileID: 0}
+  textPanel: {fileID: 0}
+  storybtn: {fileID: 0}
+  credit: {fileID: 0}
+  storytext: {fileID: 0}
 --- !u!114 &2016798720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1791,6 +1806,7 @@ MonoBehaviour:
   text: {fileID: 2070264061}
   _dialog:
   - November 13, 1987
+  _dialogNum: 0
   CharPerSeconds: 5
   textpanel: {fileID: 0}
   characterText: {fileID: 0}
@@ -1801,6 +1817,14 @@ MonoBehaviour:
   player3: {fileID: 0}
   tom: {fileID: 0}
   phase2: {fileID: 0}
+  endingText: {fileID: 0}
+  backgroundPanel: {fileID: 0}
+  image: {fileID: 0}
+  paperImage: {fileID: 0}
+  textPanel: {fileID: 0}
+  storybtn: {fileID: 0}
+  credit: {fileID: 0}
+  storytext: {fileID: 0}
 --- !u!114 &2070264061
 MonoBehaviour:
   m_ObjectHideFlags: 0
