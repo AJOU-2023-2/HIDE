@@ -120,7 +120,7 @@ public class TypingEffect : MonoBehaviour
         endingText.SetActive(false);
         credit.SetActive(true);
         yield return new WaitForSeconds(20f);
-        SceneManager.LoadScene("Main Menu (Desktop)");
+        SceneManager.LoadScene("Title");
     }
 
     public void Setmsg(string msg)
