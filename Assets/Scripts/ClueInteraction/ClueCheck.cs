@@ -51,22 +51,18 @@ public class ClueCheck : MonoBehaviour
         else if (collision.tag == "hDiary2")
         {
             count2++;
-
         }
         else if (collision.tag == "mMemo")
         {
             count2++;
-
         }
         else if (collision.tag == "oMemo2")
         {
             count2++;
-
         }
         else if (collision.tag == "hDiary__2")
         {
             count2++;
-
         }
     }
 }

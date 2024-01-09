@@ -4,55 +4,43 @@ using UnityEngine;
 
 public class ClueCheck_pg2 : MonoBehaviour
 {
-
     public GameObject clue5;
-
-
     private int count = 0;
-    
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
     void Update()
     {
-        void OnTriggerEnter2D(Collider2D collision)
-        {
-            if (collision.tag == "hDiary1")
-            {
-                count++;
-            }else if(collision.tag == "hDiary2")
-            {
-                count++;
-
-            }
-            else if (collision.tag == "mMemo")
-            {
-                count++;
-
-            }
-            else if (collision.tag == "oMemo2")
-            {
-                count++;
-
-            }
-            else if (collision.tag == "hDiary__2")
-            {
-                count++;
-
-            }
-
-        }
-
         if(count == 5)
         {
             clue5.SetActive(true);
         }
+    }
 
-
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "hDiary1")
+        {
+            count++;
+            Debug.Log("touch");
+        }
+        else if (collision.tag == "hDiary2")
+        {
+            count++;
+            Debug.Log("touch");
+        }
+        else if (collision.tag == "mMemo")
+        {
+            count++;
+            Debug.Log("touch");
+        }
+        else if (collision.tag == "oMemo2")
+        {
+            count++;
+            Debug.Log("touch");
+        }
+        else if (collision.tag == "hDiary__2")
+        {
+            count++;
+            Debug.Log("touch");
+        }
     }
 }
