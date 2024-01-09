@@ -61,6 +61,7 @@ public class TypingEffect : MonoBehaviour
                 SceneManager.LoadScene("MainGame");
             if (SceneManager.GetActiveScene().buildIndex == 3)
             {
+                //페이지2 넘어가기전 톰이 달려오는 장면 애니메이션 실행
                 if(this.gameObject.tag == "Monologue")
                 {
                     tom.GetComponent<TomAnim>().incheck = false;
@@ -85,7 +86,6 @@ public class TypingEffect : MonoBehaviour
                     characterImage.SetActive(false);
                     player.SetActive(true);
                 }
-                //player.GetComponent<Move>().enabled = true;
             }
             if (SceneManager.GetActiveScene().buildIndex == 4)
             {
