@@ -13,7 +13,7 @@ public class UIBtn : MonoBehaviour
     public GameObject Map; //Map Panel
     public GameObject MapBtn; //Map Button
     public GameObject PlayerObj;
-    public AudioSource Itemaudio;
+    public AudioSource Clickaudio;
 
     public bool CheckItem1 = false;
     public bool CheckItem2 = false;
@@ -49,12 +49,61 @@ public class UIBtn : MonoBehaviour
             MapBtn.SetActive(true);
         }
 
+        if (MapBtn.activeSelf == true)
+        {
+            if(Map.activeSelf == true)
+            {
+                if (Input.GetButtonDown("Map"))
+                {
+                    Map.SetActive(false);
+                    Clickaudio.Play();
+                }
+            }
+            else
+            {
+                if (Input.GetButtonDown("Map"))
+                {
+                    Map.SetActive(true);
+                    Clickaudio.Play();
+                }
+            }
+        }
+
+        if(Map.activeSelf == true)
+        {
+            if (Input.GetButtonDown("1"))
+            {
+                MapCellar.SetActive(true);
+                Map1st.SetActive(false);
+                Map2nd.SetActive(false);
+
+                Clickaudio.Play();
+            }
+            else if (Input.GetButtonDown("2"))
+            {
+                Map1st.SetActive(true);
+                MapCellar.SetActive(false);
+                Map2nd.SetActive(false);
+
+                Clickaudio.Play();
+            }
+            else if (Input.GetButtonDown("3"))
+            {
+                Map2nd.SetActive(true);
+                MapCellar.SetActive(false);
+                Map1st.SetActive(false);
+
+                Clickaudio.Play();
+            }
+        }
+
+
         if (Inventory.activeSelf == false)
         {
             if (Input.GetButtonDown("Inventory"))
             {
                 Inventory.SetActive(true);
-                Itemaudio.Play();
+                Clickaudio.Play();
             }
         }
         else
@@ -62,7 +111,7 @@ public class UIBtn : MonoBehaviour
             if (Input.GetButtonDown("Inventory"))
             {
                 Inventory.SetActive(false);
-                Itemaudio.Play();
+                Clickaudio.Play();
 
             }
         }
@@ -73,7 +122,7 @@ public class UIBtn : MonoBehaviour
             {
                 Memo.SetActive(true);
                 PlayerObj.SetActive(false);
-                Itemaudio.Play();
+                Clickaudio.Play();
 
             }
         }
@@ -83,7 +132,7 @@ public class UIBtn : MonoBehaviour
             {
                 Memo.SetActive(false);
                 PlayerObj.SetActive(true);
-                Itemaudio.Play();
+                Clickaudio.Play();
 
             }
         }

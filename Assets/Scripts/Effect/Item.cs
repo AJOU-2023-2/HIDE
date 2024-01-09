@@ -8,6 +8,8 @@ public class Item : MonoBehaviour
     public GameObject playerEffect;
     private GameObject myInstance;
 
+
+
     public UIBtn uIBtn;
     private bool check;
 
@@ -30,6 +32,8 @@ public class Item : MonoBehaviour
         {
             Destroy(myInstance);
         }
+
+
     }
 
     private void Effect()

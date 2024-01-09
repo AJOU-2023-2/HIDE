@@ -4,6 +4,7 @@ using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.UI;
 using static System.Net.Mime.MediaTypeNames;
+using UnityEngine.SceneManagement;
 
 public class Mic : MonoBehaviour
 {
@@ -108,6 +109,8 @@ public class Mic : MonoBehaviour
                 // #else
                 //                 Application.Quit();
                 // #endif
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
             }
 
             if (myLightScript != null)
