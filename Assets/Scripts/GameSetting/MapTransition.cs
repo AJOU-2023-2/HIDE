@@ -33,6 +33,9 @@ public class MapTransition : MonoBehaviour
     public GameObject yesButtonUI;
     public GameObject NoButtonUI;
 
+    //단서방 비밀번호 오브젝트
+    public GameObject pin;
+
     private void Awake()
     {
         cam = Camera.main.GetComponent<CameraController>();
@@ -81,8 +84,7 @@ public class MapTransition : MonoBehaviour
                     NoButtonUI.GetComponent<Button>().onClick.AddListener(KeyNotUseBtn);
 
                 }else{
-                    mapChangeUI.SetActive(true);
-                    textUI.text = "The door is locked.";
+                    pin.SetActive(true);
                 }
             }else{
                 if(uiCheck == true)
@@ -99,9 +101,13 @@ public class MapTransition : MonoBehaviour
     {
         if(collision.tag == "Player")
         {
-            if(roomCheck == "열쇠꾸러미" || roomCheck == "빈방" || roomCheck == "딸방" || roomCheck == "딸방" || roomCheck == "손님방")
+            if(roomCheck == "열쇠꾸러미" || roomCheck == "딸방" || roomCheck == "딸방" || roomCheck == "손님방")
             {
                 mapChangeUI.SetActive(false);
+            }
+            if(roomCheck == "빈방")
+            {
+                pin.SetActive(false);
             }
         }
     }

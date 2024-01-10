@@ -12,10 +12,14 @@ public class TypingEffect : MonoBehaviour
     public int _dialogNum;
 
     public int CharPerSeconds;
-    string targetmsg;
-    int index;
-    float interval;
-    bool isEffect;
+    private string targetmsg;
+    private int index;
+    private float interval;
+    private bool isEffect;
+
+    //텍스트 이펙트없이 다 보이게 해주는 기능을 위한 변수
+    private bool msgCheck;
+    private int _dialogNum2;
 
     //인게임
     public GameObject textpanel;
@@ -38,76 +42,95 @@ public class TypingEffect : MonoBehaviour
     public GameObject credit;
     public TextMeshProUGUI storytext;
 
+    //인벤토리, 메모장 버튼 활성화
+    public GameObject invenBtn;
+    public GameObject memoBtn;
 
     // Start is called before the first frame update
     void Start()
     {
         _dialogNum = 0;
+        _dialogNum2 = 0;
+        msgCheck = true;
         NextDialog();
         interval = 1.0f / CharPerSeconds;
     }
 
     public void NextDialog()
     {
-        if(_dialogNum < _dialog.Count)
+        if(!msgCheck)
         {
-            Setmsg(_dialog[_dialogNum]);
-            _dialogNum++;
-        } else
-        {
-            if (SceneManager.GetActiveScene().buildIndex == 1)
-                SceneManager.LoadScene("MainIntro");
-            if (SceneManager.GetActiveScene().buildIndex == 2)
-                SceneManager.LoadScene("MainGame");
-            if (SceneManager.GetActiveScene().buildIndex == 3)
+            Setmsg2(_dialog[_dialogNum2]);
+            msgCheck = true;
+            _dialogNum2++;
+        }else {
+            if(_dialogNum < _dialog.Count)
             {
-                //페이지2 넘어가기전 톰이 달려오는 장면 애니메이션 실행
-                if(this.gameObject.tag == "Monologue")
+                Setmsg(_dialog[_dialogNum]);
+                _dialogNum++;
+                msgCheck = false;
+            } else
+            {
+                if (SceneManager.GetActiveScene().buildIndex == 1)
+                    SceneManager.LoadScene("MainIntro");
+                if (SceneManager.GetActiveScene().buildIndex == 2)
+                    SceneManager.LoadScene("MainGame");
+                if (SceneManager.GetActiveScene().buildIndex == 3)
                 {
-                    tom.GetComponent<TomAnim>().incheck = false;
-                    tom.GetComponent<TomAnim>().tomAnim.SetBool("walk2", true);
-                    textpanel.SetActive(false);
-                    characterName.SetActive(false);
-                    characterText.SetActive(false);
-                }else if(this.gameObject.tag == "Monologue2")
-                {
-                    textpanel.SetActive(false);
-                    characterText.SetActive(false);
-                    characterName.SetActive(false);
-                    player2.SetActive(false);
-                    player3.SetActive(true);
-                }else if(this.gameObject.tag == "PhaseChange")
-                {
-                    SceneManager.LoadScene("MainGame_pg2");
-                }else{
-                    textpanel.SetActive(false);
-                    characterText.SetActive(false);
-                    characterName.SetActive(false);
-                    characterImage.SetActive(false);
-                    player.SetActive(true);
+                    //페이지2 넘어가기전 톰이 달려오는 장면 애니메이션 실행
+                    if(this.gameObject.tag == "Monologue")
+                    {
+                        tom.GetComponent<TomAnim>().incheck = false;
+                        tom.GetComponent<TomAnim>().tomAnim.SetBool("walk2", true);
+                        textpanel.SetActive(false);
+                        characterName.SetActive(false);
+                        characterText.SetActive(false);
+                    }else if(this.gameObject.tag == "Monologue2")
+                    {
+                        textpanel.SetActive(false);
+                        characterText.SetActive(false);
+                        characterName.SetActive(false);
+                        player2.SetActive(false);
+                        player3.SetActive(true);
+                    }else if(this.gameObject.tag == "PhaseChange")
+                    {
+                        SceneManager.LoadScene("MainGame_pg2");
+                    }else{
+                        textpanel.SetActive(false);
+                        characterText.SetActive(false);
+                        characterName.SetActive(false);
+                        characterImage.SetActive(false);
+                        player.SetActive(true);
+                    }
                 }
-            }
-            if (SceneManager.GetActiveScene().buildIndex == 4)
-            {
-                textpanel.SetActive(false);
-                characterText.SetActive(false);
-                if(characterName != null)
-                    characterName.SetActive(false);
-                if(characterImage != null)
-                    characterImage.SetActive(false);
-                player.SetActive(true);
-                if(phase2 != null)
-                    phase2.SetActive(true);
-            }
-            if (SceneManager.GetActiveScene().buildIndex == 5 && _dialog.Count == 11)
-            {
-                backgroundPanel.SetActive(true);
-                image.SetActive(false);
-                paperImage.SetActive(false);
-                textPanel.SetActive(false);
-                StartCoroutine(CreditOn());
-                storybtn.SetActive(false);
-                storytext.text = "";
+                if (SceneManager.GetActiveScene().buildIndex == 4)
+                {
+                    textpanel.SetActive(false);
+                    characterText.SetActive(false);
+                    if(characterName != null)
+                        characterName.SetActive(false);
+                    if(characterImage != null)
+                        characterImage.SetActive(false);
+                    player.SetActive(true);
+                    if(invenBtn != null && memoBtn != null)
+                    {
+                        invenBtn.SetActive(true);
+                        memoBtn.SetActive(true);
+                    }
+                    //보이스 관련 패널 활성화
+                    if(phase2 != null)
+                        phase2.SetActive(true);
+                }
+                if (SceneManager.GetActiveScene().buildIndex == 5 && _dialog.Count == 11)
+                {
+                    backgroundPanel.SetActive(true);
+                    image.SetActive(false);
+                    paperImage.SetActive(false);
+                    textPanel.SetActive(false);
+                    StartCoroutine(CreditOn());
+                    storybtn.SetActive(false);
+                    storytext.text = "";
+                }
             }
         }
     }
@@ -132,6 +155,16 @@ public class TypingEffect : MonoBehaviour
         }
         targetmsg = msg;
         EffectStart();
+    }
+
+    void Setmsg2(string msg)
+    {
+        if(isEffect)
+        {
+            CancelInvoke();
+            EffectEnd();
+        }
+        text.text = msg;
     }
 
     void EffectStart()

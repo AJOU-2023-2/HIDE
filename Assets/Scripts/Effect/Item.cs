@@ -8,7 +8,8 @@ public class Item : MonoBehaviour
     public GameObject playerEffect;
     private GameObject myInstance;
 
-
+    //아이템 먹을때 들리는 사운드
+    public AudioSource audio;
 
     public UIBtn uIBtn;
     private bool check;
@@ -29,11 +30,7 @@ public class Item : MonoBehaviour
             }
         }
         else
-        {
             Destroy(myInstance);
-        }
-
-
     }
 
     private void Effect()
@@ -50,6 +47,7 @@ public class Item : MonoBehaviour
             uIBtn.CheckMap = true;
             Destroy(this.gameObject);
             playerEffect.SetActive(false);
+            audio.Play();
         }
         if(collision.tag == "Player" && this.gameObject.tag == "BundleKey")
         {
@@ -57,6 +55,7 @@ public class Item : MonoBehaviour
             Destroy(this.gameObject);
             playerEffect.SetActive(false);
             uIBtn.Item1.SetActive(true); //Show BundleKey Icon
+            audio.Play();
         }
         if(collision.tag == "Player" && this.gameObject.tag == "CusKey")
         {
@@ -64,6 +63,7 @@ public class Item : MonoBehaviour
             Destroy(this.gameObject);
             playerEffect.SetActive(false);
             uIBtn.Item2.SetActive(true); //Show CusKey Icon
+            audio.Play();
         }
         if (collision.tag == "Player" && this.gameObject.tag == "LucyKey")
         {
@@ -71,6 +71,7 @@ public class Item : MonoBehaviour
             Destroy(this.gameObject);
             playerEffect.SetActive(false);
             uIBtn.Item3.SetActive(true); //Show LucyKey Icon
+            audio.Play();
         }
         if (collision.tag == "Player" && this.gameObject.tag == "EntKey")
         {
@@ -79,6 +80,7 @@ public class Item : MonoBehaviour
             exit.GetComponent<Exit>().exitcheck = 2;
             playerEffect.SetActive(false);
             uIBtn.Item4.SetActive(true); //Show EntKey Icon
+            audio.Play();
         }
         if (collision.tag == "Player" && this.gameObject.tag == "Knife")
         {
@@ -86,6 +88,7 @@ public class Item : MonoBehaviour
             Destroy(this.gameObject);
             playerEffect.SetActive(false);
             uIBtn.Item5.SetActive(true); //Show Knife Icon
+            audio.Play();
         }
         if (collision.tag == "Player" && this.gameObject.tag == "Diary")
         {
@@ -93,6 +96,7 @@ public class Item : MonoBehaviour
             Destroy(this.gameObject);
             playerEffect.SetActive(false);
             uIBtn.Item6.SetActive(true); //Show Diary Icon
+            audio.Play();
         }
     }
 }
