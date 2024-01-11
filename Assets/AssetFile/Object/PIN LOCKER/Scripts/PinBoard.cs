@@ -88,14 +88,14 @@ namespace PinLocker
 
             Debug.Log("Done");
 
-            GameObject pin = GameObject.Find("Pin");
             this.gameObject.SetActive(false);
-            if(this.gameObject == GameObject.Find("Pin"))
+            if(this.gameObject.tag == "Pin")
             {
                 Box.SetActive(false);
                 Key.SetActive(true);
             }else {
-                room.GetComponent<MapTransition>().roomCheck = "";
+                if(room != null)
+                    room.GetComponent<MapTransition>().roomCheck = "";
             }
         }
 
