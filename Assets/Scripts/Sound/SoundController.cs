@@ -13,13 +13,13 @@ public class SoundController : MonoBehaviour
 
     public void SetBGM()
     {
-        audioMixer.SetFloat("BGM", Mathf.Log10(bgm.value) * 20);
+        audioMixer.SetFloat("Music", Mathf.Log10(bgm.value) * 20);
         //control the bgm sound
 
     }
 
     public void SetEffect()
     {
-        audioMixer.SetFloat("Effect", Mathf.Log10(bgm.value) * 20);    //control the bgm sound
+        audioMixer.SetFloat("SFX", Mathf.Log10(effect.value) * 20);    //control the Effect sound
     }
 }
