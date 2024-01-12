@@ -8,7 +8,7 @@ using UnityEngine.UI;
 
 public class DragMiniGame : MonoBehaviour
 {
-    public int touchCount = 0;
+    public int touchCount;
 
     public float timer = 5f;
     private bool gameClear = false;
@@ -25,6 +25,7 @@ public class DragMiniGame : MonoBehaviour
     public GameObject ui;
     public GameObject background;
 
+    public GameObject cluePanel;
     public GameObject clue1;
     public GameObject clue2;
     public GameObject clue3;
@@ -45,6 +46,7 @@ public class DragMiniGame : MonoBehaviour
 
     void Start()
     {
+        touchCount = 0;
         objs = GameObject.FindGameObjectsWithTag("Block");
         foreach(GameObject obj in objs)
             obj.GetComponent<Rigidbody2D>().velocity = new Vector2(0,0);
@@ -89,7 +91,6 @@ public class DragMiniGame : MonoBehaviour
         foreach(GameObject obj in objs)
         {
             obj.GetComponent<Rigidbody2D>().freezeRotation = false;
-            //obj.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
             obj.GetComponent<Rigidbody2D>().gravityScale = 1;
             obj.GetComponent<DragObj>().dragCheck = false;
         }
@@ -122,7 +123,6 @@ public class DragMiniGame : MonoBehaviour
         foreach(GameObject obj in objs)
         {
             obj.GetComponent<DragObj>().MoveObj();
-            //obj.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
             obj.GetComponent<Rigidbody2D>().velocity = new Vector2(0,0);
             obj.GetComponent<Rigidbody2D>().freezeRotation = true;
             obj.GetComponent<Rigidbody2D>().gravityScale = 0;
@@ -144,35 +144,51 @@ public class DragMiniGame : MonoBehaviour
         yield return new WaitForSeconds(1f);
         myModalWindow.ModalWindowOut();
         player.SetActive(true);
-        ui.SetActive(true);
         StartCoroutine(ShowPanel());
     }
 
     IEnumerator ShowPanel()
     {
-        background.SetActive(false);
-        //player.GetComponent<Move>().enabled = false;
-        textpanel.SetActive(true);
-        yield return new WaitForSeconds(1f);
-        characterImage.SetActive(true);
-        yield return new WaitForSeconds(1f);
-        characterName.SetActive(true);
-        yield return new WaitForSeconds(1f);
-        characterText.GetComponent<TypingEffect>()._dialog[0] = "I must get out of this mansion quickly.";
-        characterText.GetComponent<TMP_Text>().text = characterText.GetComponent<TypingEffect>()._dialog[0];
-        characterText.SetActive(true);
-        ui.SetActive(true);
-        change.SetActive(true);
-        noChange.SetActive(false);
-        game.SetActive(false);
-
         if(SceneManager.GetActiveScene().buildIndex == 4)
         {
+            characterText.GetComponent<TypingEffect>()._dialog[0] = "I must gather the evidence and get out of this mansion quickly.";
+            characterText.GetComponent<TMP_Text>().text = characterText.GetComponent<TypingEffect>()._dialog[0];
+            background.SetActive(false);
+            yield return new WaitForSeconds(1f);
+            textpanel.SetActive(true);
+            yield return new WaitForSeconds(1f);
+            characterImage.SetActive(true);
+            yield return new WaitForSeconds(1f);
+            characterName.SetActive(true);
+            yield return new WaitForSeconds(1f);
+            characterText.SetActive(true);
+            ui.SetActive(true);
+            change.SetActive(true);
+            noChange.SetActive(false);
+            yield return new WaitForSeconds(1f);
+            cluePanel.SetActive(true);
             clue1.SetActive(true);
             clue2.SetActive(true);
             clue3.SetActive(true);
             clue4.SetActive(true);
             diary.SetActive(true);
+            game.SetActive(false);
+        }else {
+            characterText.GetComponent<TypingEffect>()._dialog[0] = "I must get out of this mansion quickly.";
+            characterText.GetComponent<TMP_Text>().text = characterText.GetComponent<TypingEffect>()._dialog[0];
+            background.SetActive(false);
+            yield return new WaitForSeconds(1f);
+            textpanel.SetActive(true);
+            yield return new WaitForSeconds(1f);
+            characterImage.SetActive(true);
+            yield return new WaitForSeconds(1f);
+            characterName.SetActive(true);
+            yield return new WaitForSeconds(1f);
+            characterText.SetActive(true);
+            ui.SetActive(true);
+            change.SetActive(true);
+            noChange.SetActive(false);
+            game.SetActive(false);
         }
     }
 }

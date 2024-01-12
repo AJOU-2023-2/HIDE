@@ -46,8 +46,16 @@ public class TypingEffect : MonoBehaviour
     public GameObject invenBtn;
     public GameObject memoBtn;
 
-    // Start is called before the first frame update
     void Start()
+    {
+        _dialogNum = 0;
+        _dialogNum2 = 0;
+        msgCheck = true;
+        NextDialog();
+        interval = 1.0f / CharPerSeconds;
+    }
+
+    void OnEnable()
     {
         _dialogNum = 0;
         _dialogNum2 = 0;

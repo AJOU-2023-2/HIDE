@@ -104,13 +104,7 @@ public class Mic : MonoBehaviour
 
             if (resultValue > 70)
             {
-                // #if UNITY_EDITOR
-                //                     UnityEditor.EditorApplication.isPlaying = false;
-                // #else
-                //                 Application.Quit();
-                // #endif
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-
             }
 
             if (myLightScript != null)

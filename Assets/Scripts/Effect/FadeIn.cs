@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FadeIn : MonoBehaviour
 {
-    void Awake()
+    void OnEnable()
     {
         StartCoroutine(fadeStart());
     }

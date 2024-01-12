@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DragObj : MonoBehaviour
 {   
-    private float distance = 3.0f;
+    //private float distance = 3.0f;
     private Quaternion rot;
 
     [SerializeField] private Vector3 pos;
@@ -22,8 +22,10 @@ public class DragObj : MonoBehaviour
     { 
         if(dragCheck)
         {
+            float distance = Camera.main.WorldToScreenPoint(transform.position).z;
             Vector3 mousePosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, distance);
             Vector3 objPosition = Camera.main.ScreenToWorldPoint(mousePosition);
+            objPosition.z = 0;
             transform.position = objPosition;
         }
     }

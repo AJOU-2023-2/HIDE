@@ -135,15 +135,14 @@ public class DemianDiaryInteraction : MonoBehaviour
 
     IEnumerator ShowPanel()
     {
-        //player.GetComponent<Move>().enabled = false;
+        characterText.GetComponent<TypingEffect>()._dialog[0] = "I hear someone approaching. Is Tom still in the mansion? I need to hide quickly. I’ll pile up some items to conceal myself.";
+        characterText.GetComponent<TMP_Text>().text = characterText.GetComponent<TypingEffect>()._dialog[0];
         textpanel.SetActive(true);
         yield return new WaitForSeconds(1f);
         characterImage.SetActive(true);
         yield return new WaitForSeconds(1f);
         characterName.SetActive(true);
         yield return new WaitForSeconds(1f);
-        characterText.GetComponent<TypingEffect>()._dialog[0] = "I hear someone approaching. Is Tom still in the mansion? I need to hide quickly. I’ll pile up some items to conceal myself.";
-        characterText.GetComponent<TMP_Text>().text = characterText.GetComponent<TypingEffect>()._dialog[0];
         characterText.SetActive(true);
         minigame.SetActive(true);
         mapChange.SetActive(false);

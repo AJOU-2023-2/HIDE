@@ -14,11 +14,17 @@ public class ClueCheck : MonoBehaviour
     private bool a = true;
     private bool b = true;
 
+    public GameObject clueCheck;
+    public GameObject clueCheck2;
+    public GameObject clueCheck3;
+    public GameObject clueCheck4;
+    public GameObject clueCheck5;
+
     void Start()
     {
         obj = GameObject.Find("Exit");
     }
-    // Update is called once per frame
+    
     void Update()
     {
         if (count == 2 && a == true)
@@ -47,22 +53,27 @@ public class ClueCheck : MonoBehaviour
         else if (collision.tag == "hDiary1")
         {
             count2++;
+            clueCheck.SetActive(true);
         }
         else if (collision.tag == "hDiary2")
         {
             count2++;
+            clueCheck2.SetActive(true);
         }
         else if (collision.tag == "mMemo")
         {
             count2++;
+            clueCheck3.SetActive(true);
         }
         else if (collision.tag == "oMemo2")
         {
             count2++;
+            clueCheck4.SetActive(true);
         }
         else if (collision.tag == "hDiary__2")
         {
             count2++;
+            clueCheck5.SetActive(true);
         }
     }
 }

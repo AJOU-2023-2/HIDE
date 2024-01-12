@@ -22,9 +22,7 @@ public class Exit : MonoBehaviour
     public GameObject lucyKey;
     public GameObject anim;
 
-
-
-
+    private bool uiCheck; //계속 패널이 뜨지 않도록 제어 (차로 이동하는 장면에서)
     public bool check;  //톰 방에서 증거 모두 수집시 On
 
  
@@ -54,13 +52,12 @@ public class Exit : MonoBehaviour
         if(collision.tag == "Player")
         {
             panel.SetActive(false);
-            if(exitcheck == 1)  StartCoroutine(ShowPanel());
+            if(exitcheck == 1 && !uiCheck)  StartCoroutine(ShowPanel());
         }
     }
 
     IEnumerator ShowPanel()
     {
-        //player.GetComponent<Move>().enabled = false;
         textpanel.SetActive(true);
         yield return new WaitForSeconds(1f);
         characterImage.SetActive(true);
@@ -71,6 +68,7 @@ public class Exit : MonoBehaviour
         characterText.GetComponent<TMP_Text>().text = characterText.GetComponent<TypingEffect>()._dialog[0];
         characterText.SetActive(true);
         lucyKey.SetActive(true);
+        uiCheck = true;
     }
 
     public void YesBtn()
