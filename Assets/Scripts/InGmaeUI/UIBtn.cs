@@ -51,92 +51,116 @@ public class UIBtn : MonoBehaviour
 
         if (MapBtn.activeSelf == true)
         {
-            if(Map.activeSelf == true)
+            if (Memo.activeSelf == true || Inventory.activeSelf == true)  //If Memo or Map is opened,
             {
-                if (Input.GetButtonDown("Map"))
+                //Debug.Log("a");
+            }
+            else
+            {
+                if (Map.activeSelf == true)
                 {
-                    Map.SetActive(false);
+                    if (Input.GetButtonDown("1"))
+                    {
+                        MapCellar.SetActive(true);
+                        Map1st.SetActive(false);
+                        Map2nd.SetActive(false);
+
+                        Clickaudio.Play();
+                    }
+                    else if (Input.GetButtonDown("2"))
+                    {
+                        Map1st.SetActive(true);
+                        MapCellar.SetActive(false);
+                        Map2nd.SetActive(false);
+
+                        Clickaudio.Play();
+                    }
+                    else if (Input.GetButtonDown("3"))
+                    {
+                        Map2nd.SetActive(true);
+                        MapCellar.SetActive(false);
+                        Map1st.SetActive(false);
+
+                        Clickaudio.Play();
+                    }
+
+                    if (Input.GetButtonDown("Map"))
+                    {
+                        Map.SetActive(false);
+                        Clickaudio.Play();
+                    }
+                }
+                else
+                {
+                    if (Input.GetButtonDown("Map"))
+                    {
+                        Map.SetActive(true);
+                        Clickaudio.Play();
+                    }
+                }
+            }
+
+        }
+
+
+        if (Memo.activeSelf == true || Map.activeSelf == true)  //If Memo or Map is opened,
+        {
+            //Debug.Log("a");
+        }
+        else
+        {
+            if (Inventory.activeSelf == true)
+            {
+                if (Input.GetButtonDown("Inventory"))
+                {
+                    Inventory.SetActive(false);
                     Clickaudio.Play();
                 }
             }
             else
             {
-                if (Input.GetButtonDown("Map"))
+                if (Input.GetButtonDown("Inventory"))
                 {
-                    Map.SetActive(true);
+                    Inventory.SetActive(true);
                     Clickaudio.Play();
+
                 }
             }
         }
 
-        if(Map.activeSelf == true)
+
+        if (Inventory.activeSelf == true || Map.activeSelf == true)  //If Memo or Map is opened,
         {
-            if (Input.GetButtonDown("1"))
-            {
-                MapCellar.SetActive(true);
-                Map1st.SetActive(false);
-                Map2nd.SetActive(false);
-
-                Clickaudio.Play();
-            }
-            else if (Input.GetButtonDown("2"))
-            {
-                Map1st.SetActive(true);
-                MapCellar.SetActive(false);
-                Map2nd.SetActive(false);
-
-                Clickaudio.Play();
-            }
-            else if (Input.GetButtonDown("3"))
-            {
-                Map2nd.SetActive(true);
-                MapCellar.SetActive(false);
-                Map1st.SetActive(false);
-
-                Clickaudio.Play();
-            }
-        }
-
-
-        if (Inventory.activeSelf == false)
-        {
-            if (Input.GetButtonDown("Inventory"))
-            {
-                Inventory.SetActive(true);
-                Clickaudio.Play();
-            }
+            //Debug.Log("a");
         }
         else
         {
-            if (Input.GetButtonDown("Inventory"))
+            if (Memo.activeSelf == true)
             {
-                Inventory.SetActive(false);
-                Clickaudio.Play();
+                if (Input.GetButtonDown("Memo"))
+                {
+                    Memo.SetActive(false);
+                    PlayerObj.SetActive(true);
+                    Clickaudio.Play();
 
+                }
+            }
+            else
+            {
+                if (Input.GetButtonDown("Memo"))
+                {
+                    if (Inventory.activeSelf == false || Map.activeSelf == false)
+                    {
+                        Memo.SetActive(true);
+                        PlayerObj.SetActive(false);
+                        Clickaudio.Play();
+                    }
+                }
             }
         }
-
-        if (Memo.activeSelf == false)
-        {
-            if (Input.GetButtonDown("Memo"))
-            {
-                Memo.SetActive(true);
-                PlayerObj.SetActive(false);
-                Clickaudio.Play();
-
-            }
-        }
-        else
-        {
-            if (Input.GetButtonDown("Memo"))
-            {
-                Memo.SetActive(false);
-                PlayerObj.SetActive(true);
-                Clickaudio.Play();
-
-            }
-        }
+ 
     }
+    
 
     //Turn on and off the Inventory Panel
     public void InventoryUI()
