@@ -83,8 +83,12 @@ public class MapTransition : MonoBehaviour
                     yesButtonUI.GetComponent<Button>().onClick.AddListener(KeyUseBtn);
                     NoButtonUI.GetComponent<Button>().onClick.AddListener(KeyNotUseBtn);
 
-                }else{
+                }else if(roomCheck == "빈방")
+                {
                     pin.SetActive(true);
+                }else{
+                    mapChangeUI.SetActive(true);
+                    textUI.text = "The door is locked.";
                 }
             }else{
                 if(uiCheck == true)
